@@ -2,7 +2,7 @@ import '@/styles/tokens.css'
 import '@/styles/atoms.css'
 import '@/styles/molecules.css'
 import '@/styles/organisms.css'
-import { renderHero } from '@/render/hero'
+import { renderOverview } from '@/render/overview'
 import { mountLeaderboard } from '@/render/leaderboard'
 import { mountRadar } from '@/render/radar'
 import { renderSources } from '@/render/sources'
@@ -13,9 +13,10 @@ import { qs } from '@/utils/dom'
 function renderTabsNav(): string {
   const state = store.get()
   const tabs = [
-    { key: 'leaderboard', label: '技能清單與總覽' },
+    { key: 'overview', label: '戰略綜觀與 KPI' },
+    { key: 'leaderboard', label: '技能排行明細' },
     { key: 'radar', label: '四維能力比較' },
-    { key: 'vendor', label: '廠商戰力對決' },
+    { key: 'vendor', label: '廠商競爭格局' },
     { key: 'sources', label: '資料來源追蹤' },
   ] as const
 
@@ -40,7 +41,9 @@ function mountTabContent(tabContent: HTMLDivElement): void {
   tabContent.innerHTML = `<div id="active-pane"></div>`
   const pane = qs<HTMLElement>('#active-pane')
 
-  if (activeTab === 'leaderboard') {
+  if (activeTab === 'overview') {
+    renderOverview(pane)
+  } else if (activeTab === 'leaderboard') {
     mountLeaderboard(pane)
   } else if (activeTab === 'radar') {
     mountRadar(pane)
@@ -56,13 +59,18 @@ function mountApp(): void {
 
   app.innerHTML = `
     <main>
-      <section class="hero" id="hero"></section>
+      <header style="padding: 0 0 1.25rem; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--color-line); margin-bottom: 1.5rem;">
+        <span style="font-weight: 800; font-size: 1.15rem; letter-spacing: -0.02em; color: var(--color-text);">
+          AI Skill Value Index
+        </span>
+        <span style="font-size: 0.8rem; color: var(--color-muted); font-weight: 500;">
+          更新期間: 2026年3-5月 (近90天)
+        </span>
+      </header>
       <div id="tabs-container"></div>
-      <div id="tab-content"></div>
+      <div id="tab-content" style="margin-top: 1.5rem;"></div>
     </main>
   `
-
-  renderHero(qs<HTMLElement>('#hero'))
 
   const tabsContainer = qs<HTMLDivElement>('#tabs-container')
   const tabContent = qs<HTMLDivElement>('#tab-content')

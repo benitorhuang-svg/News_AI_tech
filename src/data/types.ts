@@ -58,5 +58,5 @@ export interface AppState {
   searchQuery: string
   sortBy: 'score' | 'name' | 'vendor'
   compareIds: number[]
-  activeTab: 'leaderboard' | 'radar' | 'vendor' | 'sources'
+  activeTab: 'overview' | 'leaderboard' | 'radar' | 'vendor' | 'sources'
 }

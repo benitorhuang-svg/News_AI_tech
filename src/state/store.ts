@@ -8,7 +8,7 @@ const state: AppState = {
   searchQuery: '',
   sortBy: 'score',
   compareIds: [],
-  activeTab: 'leaderboard',
+  activeTab: 'overview',
 }
 
 const listeners: Set<Listener> = new Set()

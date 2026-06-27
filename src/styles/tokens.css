@@ -1,0 +1,32 @@
+:root {
+  color-scheme: light;
+  --color-page: #f8fafc;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f1f5f9;
+  --color-text: #0f172a;
+  --color-text-light: #334155;
+  --color-muted: #64748b;
+  --color-line: #e2e8f0;
+
+  /* 廠商識別色（更成熟、洗鍊的企業色系） */
+  --vendor-gemini: #2563eb;
+  --vendor-chatgpt: #0f766e;
+  --vendor-claude: #c2410c;
+
+  /* 等級標籤色（高對比、低彩度專業配色） */
+  --color-grade-a: #16a34a;
+  --color-grade-b: #2563eb;
+  --color-grade-c: #d97706;
+  --color-grade-d: #dc2626;
+
+  /* 陰影與圓角 */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+
+  --container: 1200px;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans TC", sans-serif;
+}

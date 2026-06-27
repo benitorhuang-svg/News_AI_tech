@@ -1,0 +1,17 @@
+#!/bin/sh
+echo "🔍 Pre-push 檢查中..."
+
+echo ""
+echo "1️⃣  TypeScript 型別檢查"
+npx tsc --noEmit || { echo "❌ TS 型別錯誤"; exit 1; }
+
+echo ""
+echo "2️⃣  Vite 建置測試"
+npm run build || { echo "❌ 建置失敗"; exit 1; }
+
+echo ""
+echo "3️⃣  檔案行數檢查（≤ 300 行）"
+node scripts/check-lines.js || { echo "❌ 有檔案超過 300 行"; exit 1; }
+
+echo ""
+echo "✅ 所有檢查通過，允許 push"

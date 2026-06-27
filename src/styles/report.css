@@ -1,0 +1,220 @@
+body {
+  background:
+    linear-gradient(#e9eef5 0 210px, transparent 210px),
+    var(--color-page);
+}
+
+main {
+  padding-top: 0.85rem;
+}
+
+.hero {
+  border-color: #d2dae6;
+  box-shadow: 0 14px 30px rgba(16, 24, 40, 0.07);
+  padding: 1.6rem;
+}
+
+.hero h1 {
+  font-size: 2rem;
+}
+
+.hero__lead {
+  max-width: 760px;
+}
+
+.insight-strip {
+  border: 1px solid #d9e1ec;
+  border-radius: 999px;
+  background: #f7f9fc;
+  color: #475467;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  padding: 0.3rem;
+  width: fit-content;
+}
+
+.insight-strip span {
+  border-right: 1px solid #d9e1ec;
+  font-size: 0.82rem;
+  font-weight: 650;
+  padding: 0.28rem 0.72rem;
+}
+
+.insight-strip span:last-child {
+  border-right: 0;
+}
+
+.metric-card {
+  border-color: #d7dfeb;
+  min-height: 116px;
+  position: relative;
+}
+
+.metric-card::before {
+  background: var(--color-focus);
+  border-radius: 999px;
+  content: "";
+  height: 3px;
+  left: 1rem;
+  position: absolute;
+  right: 1rem;
+  top: 0.75rem;
+}
+
+.metric-card strong {
+  margin-top: 0.85rem;
+}
+
+.metric-card small {
+  color: var(--color-muted);
+  display: block;
+  font-size: 0.78rem;
+  margin-top: 0.4rem;
+}
+
+.metric-card:nth-child(2)::before {
+  background: var(--vendor-chatgpt);
+}
+
+.metric-card:nth-child(3)::before {
+  background: var(--color-grade-a);
+}
+
+.metric-card:nth-child(4)::before {
+  background: var(--vendor-claude);
+}
+
+.section-heading {
+  border-bottom: 1px solid #dce3ed;
+  margin-bottom: 0.65rem;
+  padding-bottom: 0.55rem;
+}
+
+.section-heading h2 {
+  font-size: 1.12rem;
+}
+
+.toolbar {
+  border-color: #d6deea;
+  box-shadow: 0 8px 18px rgba(16, 24, 40, 0.05);
+}
+
+.segmented-control {
+  background: #eef2f7;
+}
+
+.table-frame,
+.chart-frame,
+.vendor-card,
+.source-item,
+.source-note,
+.summary-row,
+.pagination,
+.compare-chip {
+  border-color: #d6deea;
+  box-shadow: 0 8px 18px rgba(16, 24, 40, 0.04);
+}
+
+.table-frame {
+  border-radius: 10px;
+}
+
+thead th {
+  background: #f0f4f8;
+  color: #475467;
+}
+
+tbody tr:nth-child(even) td {
+  background: #fbfcfe;
+}
+
+.rank-cell,
+.score-cell {
+  font-family: var(--font-mono);
+  text-align: center;
+}
+
+.rank-cell {
+  color: #667085;
+  font-size: 0.9rem;
+  font-weight: 700;
+  width: 48px;
+}
+
+.score-cell {
+  color: #1f2937;
+  font-size: 1.05rem;
+  font-weight: 760;
+  width: 58px;
+}
+
+.skill-title {
+  font-size: 0.92rem;
+}
+
+.skill-desc {
+  max-width: 640px;
+}
+
+.vendor-badge,
+.grade-pill {
+  border-radius: 999px;
+}
+
+.dimension-bar__track {
+  background: #edf2f7;
+}
+
+.chart-frame {
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.hero__highlight {
+  border-radius: 10px;
+  margin-top: 0.8rem;
+}
+
+.vendor-card {
+  border-radius: 10px;
+}
+
+.vendor-card__top strong {
+  color: var(--vendor-color);
+}
+
+.source-list {
+  gap: 0.75rem;
+}
+
+.source-item {
+  border-radius: 10px;
+  grid-template-columns: 1fr auto;
+  min-height: 112px;
+}
+
+.source-item > strong {
+  align-self: end;
+  grid-row: span 2;
+  text-align: right;
+}
+
+.source-item__title {
+  grid-column: 1 / -1;
+}
+
+.overview-grid {
+  margin-top: 0.3rem;
+}
+
+@media (max-width: 720px) {
+  body {
+    background: var(--color-page);
+  }
+
+  .insight-strip {
+    border-radius: 10px;
+    width: 100%;
+  }
+}

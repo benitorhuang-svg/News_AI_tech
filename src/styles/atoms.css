@@ -3,8 +3,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
-  background-color: var(--color-page);
+  background: var(--color-page);
 }
 
 body {
@@ -12,26 +11,26 @@ body {
   background: var(--color-page);
   color: var(--color-text);
   font-family: var(--font-sans);
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
+  line-height: 1.55;
+  letter-spacing: 0;
 }
 
 button,
 input,
 select {
-  font: inherit;
   color: inherit;
+  font: inherit;
 }
 
 button {
-  cursor: pointer;
+  border: 0;
   background: none;
-  border: none;
+  cursor: pointer;
 }
 
 button:disabled {
   cursor: not-allowed;
-  opacity: 0.5;
+  opacity: 0.45;
 }
 
 h1,
@@ -42,58 +41,62 @@ p {
 }
 
 h1 {
-  font-size: 2.25rem;
-  font-weight: 800;
-  letter-spacing: -0.03em;
   color: var(--color-text);
+  font-size: 1.85rem;
+  font-weight: 760;
+  line-height: 1.2;
 }
 
 h2 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
   color: var(--color-text);
+  font-size: 1.25rem;
+  font-weight: 720;
+  line-height: 1.25;
+}
+
+h3 {
+  color: var(--color-text);
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
 }
 
 th {
-  color: var(--color-muted);
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  padding: 0.75rem 1rem;
-  background: var(--color-surface-alt);
   border-bottom: 1px solid var(--color-line);
+  background: var(--color-surface-alt);
+  color: var(--color-muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.7rem 0.85rem;
   text-align: left;
 }
 
 td {
-  padding: 1rem;
-  vertical-align: middle;
   border-bottom: 1px solid var(--color-line);
   color: var(--color-text-light);
+  padding: 0.8rem 0.85rem;
+  vertical-align: middle;
 }
 
 tr:hover td {
-  background-color: rgba(248, 250, 252, 0.5);
+  background: #fbfcfe;
+}
+
+a {
+  color: var(--color-focus);
 }
 
 .eyebrow {
-  color: var(--vendor-gemini);
-  font-size: 0.75rem;
+  color: var(--color-muted);
+  font-size: 0.78rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  margin-bottom: 0.25rem;
 }
 
-/* 專業按鈕樣式 */
 .ghost-button,
 .icon-button {
   align-items: center;
@@ -102,33 +105,41 @@ tr:hover td {
   background: var(--color-surface);
   color: var(--color-text-light);
   display: inline-flex;
-  font-weight: 600;
-  font-size: 0.85rem;
+  font-size: 0.84rem;
+  font-weight: 650;
   justify-content: center;
-  transition: all 0.15s ease;
-  box-shadow: var(--shadow-sm);
 }
 
 .ghost-button {
-  min-height: 2.2rem;
-  padding: 0 1rem;
+  min-height: 2.15rem;
+  padding: 0 0.8rem;
 }
 
 .ghost-button:hover,
 .icon-button:hover {
-  background: var(--color-surface-alt);
-  border-color: #cbd5e1;
+  border-color: #b7c2d0;
   color: var(--color-text);
 }
 
 .icon-button {
-  height: 2.2rem;
-  width: 2.2rem;
+  height: 2rem;
+  width: 2rem;
 }
 
 .icon-button.is-active {
-  border-color: var(--color-grade-a);
-  background: #f0fdf4;
-  color: var(--color-grade-a);
-  box-shadow: none;
+  border-color: var(--color-focus);
+  background: #eef4ff;
+  color: var(--color-focus);
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }

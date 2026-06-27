@@ -1,78 +1,76 @@
+.app-title {
+  color: var(--color-text);
+  font-size: 1.05rem;
+  font-weight: 760;
+}
+
 .section-heading {
   align-items: flex-end;
   display: flex;
   gap: 1rem;
   justify-content: space-between;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 
-/* 專業統計卡片 */
-.metric-card {
+.metric-card,
+.table-frame,
+.chart-frame,
+.vendor-card,
+.source-item,
+.source-note,
+.toolbar,
+.compare-chip,
+.summary-row,
+.pagination {
   border: 1px solid var(--color-line);
   border-radius: var(--radius-md);
   background: var(--color-surface);
-  color: var(--color-text);
-  padding: 1.25rem;
   box-shadow: var(--shadow-sm);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.metric-card:hover {
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-md);
+.metric-card {
+  padding: 1rem;
 }
 
 .metric-card strong {
   display: block;
-  font-size: 2rem;
-  font-weight: 800;
+  font-size: 1.65rem;
+  font-weight: 760;
   line-height: 1.1;
-  letter-spacing: -0.04em;
   margin-top: 0.25rem;
 }
 
 .metric-card__label {
   color: var(--color-muted);
   display: block;
-  font-size: 0.8rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  font-size: 0.78rem;
+  font-weight: 650;
 }
 
-/* 篩選與工具列 */
 .toolbar {
-  align-items: flex-end;
+  align-items: end;
   display: grid;
-  gap: 1rem;
-  grid-template-columns: auto auto 1fr auto;
-  margin-bottom: 1.5rem;
-  background: var(--color-surface);
-  padding: 1.25rem;
-  border: 1px solid var(--color-line);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-sm);
+  gap: 0.8rem;
+  grid-template-columns: auto auto minmax(220px, 1fr) auto auto;
+  margin-bottom: 1rem;
+  padding: 1rem;
 }
 
-/* 分段選擇器，避免有 AI 微妙的七彩背景，採用 Slate 高級灰色系 */
 .segmented-control {
   align-items: center;
   border: 1px solid var(--color-line);
   border-radius: var(--radius-sm);
-  background: var(--color-page);
+  background: var(--color-surface-alt);
   display: inline-flex;
   padding: 2px;
 }
 
 .segmented-control button {
-  border: 0;
-  border-radius: 4px;
-  background: transparent;
+  border-radius: var(--radius-xs);
   color: var(--color-muted);
-  font-weight: 600;
-  font-size: 0.85rem;
-  padding: 0.4rem 0.85rem;
-  transition: all 0.15s ease;
+  font-size: 0.84rem;
+  font-weight: 650;
+  padding: 0.36rem 0.75rem;
 }
 
 .segmented-control button.is-active {
@@ -85,8 +83,8 @@
   color: var(--color-muted);
   display: grid;
   font-size: 0.78rem;
-  font-weight: 700;
-  gap: 0.35rem;
+  font-weight: 650;
+  gap: 0.32rem;
 }
 
 .field input,
@@ -94,26 +92,14 @@
   border: 1px solid var(--color-line);
   border-radius: var(--radius-sm);
   background: var(--color-surface);
-  color: var(--color-text);
   min-height: 2.2rem;
-  padding: 0 0.8rem;
-  font-size: 0.88rem;
-  transition: border-color 0.15s ease;
-  box-shadow: var(--shadow-sm);
+  padding: 0 0.7rem;
 }
 
 .field input:focus,
 .field select:focus {
-  outline: none;
-  border-color: #94a3b8;
-}
-
-.table-frame,
-.chart-frame {
-  border: 1px solid var(--color-line);
-  border-radius: var(--radius-md);
-  background: var(--color-surface);
-  box-shadow: var(--shadow-sm);
+  border-color: var(--color-focus);
+  outline: 2px solid #dbe8ff;
 }
 
 .table-frame {
@@ -121,95 +107,74 @@
 }
 
 .chart-frame {
-  min-height: 360px;
-  padding: 1.5rem;
+  min-height: 340px;
+  padding: 1rem;
 }
 
 .chart-frame--radar {
-  height: 440px;
+  height: 420px;
 }
 
 .chart-frame--bar {
-  height: 380px;
+  height: 300px;
 }
 
-/* 乾淨、精緻的標籤 */
 .vendor-badge,
 .grade-pill {
-  border-radius: 4px;
+  border: 1px solid color-mix(in srgb, var(--badge-color, var(--vendor-color)) 30%, var(--color-line));
+  border-radius: var(--radius-xs);
+  background: color-mix(in srgb, var(--badge-color, var(--vendor-color)) 9%, white);
+  color: var(--badge-color, var(--vendor-color));
   display: inline-flex;
-  align-items: center;
   font-size: 0.75rem;
   font-weight: 700;
-  min-width: max-content;
-  padding: 0.2rem 0.5rem;
-}
-
-.vendor-badge {
-  background: color-mix(in srgb, var(--vendor-color) 8%, #f8fafc);
-  border: 1px solid color-mix(in srgb, var(--vendor-color) 20%, #e2e8f0);
-  color: var(--vendor-color);
+  padding: 0.22rem 0.45rem;
 }
 
 .grade-pill {
-  background: color-mix(in srgb, var(--grade-color) 8%, #f8fafc);
-  border: 1px solid color-mix(in srgb, var(--grade-color) 20%, #e2e8f0);
-  color: var(--grade-color);
+  --badge-color: var(--grade-color);
 }
 
-/* 比較控制條 */
 .compare-list {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 1.25rem;
-  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 1rem;
 }
 
 .compare-chip {
   align-items: center;
-  border: 1px solid var(--color-line);
-  border-radius: var(--radius-sm);
-  background: var(--color-surface);
   display: inline-flex;
   gap: 0.5rem;
-  font-size: 0.8rem;
-  font-weight: 600;
-  min-height: 2rem;
+  min-height: 2.1rem;
   padding: 0.25rem 0.65rem;
-  box-shadow: var(--shadow-sm);
+}
+
+.compare-chip--wide {
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+  width: 100%;
 }
 
 .compare-chip b {
-  color: var(--vendor-gemini);
+  color: var(--color-focus);
 }
 
 .compare-chip button {
-  border: 0;
-  background: transparent;
   color: var(--color-muted);
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1;
-  padding: 0;
 }
 
-.compare-chip button:hover {
-  color: var(--color-grade-d);
-}
-
-/* 廠商名片 */
 .vendor-card,
 .source-item,
 .source-note {
-  border: 1px solid var(--color-line);
-  border-radius: var(--radius-md);
-  background: var(--color-surface);
-  box-shadow: var(--shadow-sm);
+  padding: 1rem;
 }
 
 .vendor-card {
   border-top: 3px solid var(--vendor-color);
-  padding: 1.25rem;
 }
 
 .vendor-card__top {
@@ -218,60 +183,43 @@
   justify-content: space-between;
 }
 
-.vendor-card__top span {
-  font-size: 1.15rem;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-}
-
+.vendor-card__top span,
 .vendor-card__top strong {
-  font-size: 1.5rem;
-  font-weight: 800;
-  letter-spacing: -0.03em;
+  font-size: 1.2rem;
+  font-weight: 760;
 }
 
-.vendor-card p {
-  font-size: 0.85rem;
+.vendor-card p,
+.vendor-card small,
+.source-note p,
+.source-item small {
   color: var(--color-muted);
-  margin-top: 0.15rem;
+  font-size: 0.82rem;
 }
 
 .vendor-card dl {
   display: grid;
   gap: 0.5rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  margin: 1rem 0 0.75rem;
+  margin: 0.9rem 0;
 }
 
 .vendor-card dl div {
-  border-radius: var(--radius-sm);
-  background: var(--color-page);
-  padding: 0.5rem 0.75rem;
   border: 1px solid var(--color-line);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-alt);
+  padding: 0.5rem;
 }
 
 .vendor-card dt {
   color: var(--color-muted);
-  font-size: 0.7rem;
-  font-weight: 700;
+  font-size: 0.72rem;
+  font-weight: 650;
 }
 
 .vendor-card dd {
   margin: 0;
-  font-size: 1.1rem;
-  font-weight: 800;
-  color: var(--color-text);
-  margin-top: 0.1rem;
-}
-
-.vendor-card small {
-  color: var(--color-muted);
-  font-size: 0.75rem;
-}
-
-.source-item,
-.source-note {
-  padding: 1.25rem;
+  font-weight: 760;
 }
 
 .source-item {
@@ -280,18 +228,51 @@
 }
 
 .source-item strong {
-  color: var(--vendor-gemini);
-  font-size: 1.75rem;
-  font-weight: 800;
+  color: var(--color-focus);
+  font-size: 1.55rem;
   line-height: 1.1;
 }
 
-.source-item span {
-  font-weight: 700;
+.source-item__title {
+  color: var(--color-text);
   font-size: 0.9rem;
 }
 
-.source-item small {
+.status-line {
+  border-top: 1px solid var(--color-line);
+  margin-top: 1rem;
+  padding-top: 0.8rem;
+}
+
+.source-link {
+  border: 1px solid #d6deea;
+  border-radius: 999px;
+  color: #475467;
+  display: inline-flex;
+  font-size: 0.78rem;
+  font-weight: 700;
+  max-width: 160px;
+  overflow: hidden;
+  padding: 0.25rem 0.55rem;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.source-link:hover {
+  border-color: #aeb9ca;
+  color: #1f2937;
+}
+
+.date-tag {
+  border: 1px solid #d6deea;
+  border-radius: 999px;
+  background: #f7f9fc;
+  color: #475467;
+  display: inline-flex;
+  font-family: var(--font-mono);
   font-size: 0.75rem;
-  color: var(--color-muted);
+  font-weight: 700;
+  padding: 0.25rem 0.55rem;
+  white-space: nowrap;
 }

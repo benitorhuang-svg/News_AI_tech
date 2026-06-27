@@ -23,7 +23,7 @@ Chart.register(
 )
 
 const charts = new WeakMap<HTMLCanvasElement, Chart>()
-const palette = ['#2563eb', '#0d9488', '#ea580c'] // Gemini Blue, ChatGPT Teal, Claude Orange
+const palette = ['#315b8c', '#28705f', '#9a5b22']
 
 export function drawRadarChart(canvas: HTMLCanvasElement, skills: Skill[]): void {
   charts.get(canvas)?.destroy()
@@ -39,7 +39,7 @@ export function drawRadarChart(canvas: HTMLCanvasElement, skills: Skill[]): void
           label: skill.name,
           data: DIMENSIONS.map((dimension) => skill[dimension.key]),
           borderColor: color,
-          backgroundColor: `${color}16`, // Muted fill opacity
+          backgroundColor: `${color}14`,
           borderWidth: 2,
           pointBackgroundColor: color,
           pointBorderColor: '#ffffff',
@@ -66,9 +66,11 @@ export function drawRadarChart(canvas: HTMLCanvasElement, skills: Skill[]): void
           },
         },
         tooltip: {
-          backgroundColor: '#0f172a',
-          titleColor: '#ffffff',
-          bodyColor: '#e2e8f0',
+          backgroundColor: '#ffffff',
+          titleColor: '#202733',
+          bodyColor: '#475467',
+          borderColor: '#d8dee7',
+          borderWidth: 1,
           padding: 8,
           cornerRadius: 6,
           callbacks: {

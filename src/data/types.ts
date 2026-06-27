@@ -42,13 +42,28 @@ export interface Skill {
   grade: string
   comment: string
   source: string
+  publishedAt: string
+}
+
+export interface RawSkill {
+  id: number
+  vendor: Vendor
+  name: string
+  desc: string
+  category: string
+  useCase: string
+  practicality: number
+  accessibility: number
+  maturity: number
+  uniqueness: number
+  comment: string
+  source: string
+  publishedAt?: string
 }
 
 /* ── 廠商色彩 ── */
 export interface VendorStyle {
   primary: string
-  gradient: string
-  glow: string
 }
 
 /* ── 應用狀態 ── */
@@ -56,7 +71,12 @@ export interface AppState {
   vendorFilter: Vendor | 'all'
   gradeFilter: GradeKey | 'all'
   searchQuery: string
-  sortBy: 'score' | 'name' | 'vendor'
+  sortBy: 'score' | 'name' | 'vendor' | 'date'
+  dateFrom: string
+  dateTo: string
+  recentDays: number | null
   compareIds: number[]
-  activeTab: 'overview' | 'leaderboard' | 'radar' | 'vendor' | 'sources'
+  activeTab: 'overview' | 'leaderboard' | 'analysis'
+  currentPage: number
+  pageSize: number
 }

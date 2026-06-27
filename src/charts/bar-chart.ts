@@ -30,9 +30,9 @@ export interface VendorAverage {
 
 const charts = new WeakMap<HTMLCanvasElement, Chart>()
 const colors: Record<Vendor, string> = {
-  Gemini: '#2563eb',  // Gemini Blue
-  ChatGPT: '#0f766e', // ChatGPT Teal
-  Claude: '#c2410c',  // Claude Orange
+  Gemini: '#315b8c',
+  ChatGPT: '#28705f',
+  Claude: '#9a5b22',
 }
 
 export function drawVendorBarChart(
@@ -63,9 +63,11 @@ export function drawVendorBarChart(
           display: false, // Clean look, title says it all
         },
         tooltip: {
-          backgroundColor: '#0f172a',
-          titleColor: '#ffffff',
-          bodyColor: '#e2e8f0',
+          backgroundColor: '#ffffff',
+          titleColor: '#202733',
+          bodyColor: '#475467',
+          borderColor: '#d8dee7',
+          borderWidth: 1,
           padding: 8,
           cornerRadius: 6,
           callbacks: {
@@ -79,7 +81,7 @@ export function drawVendorBarChart(
             display: false,
           },
           ticks: {
-            color: '#0f172a',
+            color: '#475467',
             font: {
               size: 13,
               weight: 600,
@@ -96,7 +98,7 @@ export function drawVendorBarChart(
             },
           },
           grid: {
-            color: '#f1f5f9',
+            color: '#edf1f5',
           },
         },
       },

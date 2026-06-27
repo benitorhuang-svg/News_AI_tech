@@ -1,56 +1,44 @@
 import { GRADES, SKILLS, VENDORS, VENDOR_STYLES } from '@/data/skills'
 import type { AppState, GradeKey, Skill, Vendor } from '@/data/types'
+import {
+  dimensions,
+  formatDateTag,
+  gradeColor,
+  sourceLabel,
+  sourceUrl,
+  visibleSkills,
+} from '@/render/leaderboard-utils'
 import { store } from '@/state/store'
-import { gradeKey } from '@/utils/scoring'
+import { debounce, escapeHTML } from '@/utils/dom'
 
-function matchesQuery(skill: Skill, query: string): boolean {
-  const target = [
-    skill.name,
-    skill.desc,
-    skill.category,
-    skill.useCase,
-    skill.comment,
-    skill.source,
-  ].join(' ')
-
-  return target.toLowerCase().includes(query.trim().toLowerCase())
+function dimensionBars(skill: Skill): string {
+  return `
+    <div class="dimension-bars">
+      ${dimensions.map(([label, title, key, color]) => `
+        <div class="dimension-bar" title="${title}: ${skill[key]} / 5">
+          <span class="dimension-bar__label">${label}</span>
+          <div class="dimension-bar__track">
+            <div class="dimension-bar__fill" style="height: ${skill[key] * 20}%; --dim-color: ${color};"></div>
+          </div>
+        </div>
+      `).join('')}
+    </div>
+  `
 }
 
-function compareSkills(sortBy: AppState['sortBy']) {
-  return (a: Skill, b: Skill) => {
-    if (sortBy === 'name') return a.name.localeCompare(b.name, 'zh-Hant')
-    if (sortBy === 'vendor') return a.vendor.localeCompare(b.vendor, 'en')
-    return b.score - a.score
-  }
-}
-
-function visibleSkills(): Skill[] {
-  const state = store.get()
-
-  return SKILLS.filter((skill) => {
-    const vendorMatch = state.vendorFilter === 'all' || skill.vendor === state.vendorFilter
-    const gradeMatch = state.gradeFilter === 'all' || gradeKey(skill.score) === state.gradeFilter
-    const queryMatch = !state.searchQuery || matchesQuery(skill, state.searchQuery)
-
-    return vendorMatch && gradeMatch && queryMatch
-  }).sort(compareSkills(state.sortBy))
-}
-
-function gradeColor(skill: Skill): string {
-  return GRADES.find((grade) => grade.key === gradeKey(skill.score))?.color ?? '#667085'
-}
-
-function skillRow(skill: Skill): string {
+function skillRow(skill: Skill, sequence: number): string {
   const selected = store.get().compareIds.includes(skill.id)
   const vendorStyle = VENDOR_STYLES[skill.vendor]
 
   return `
-    <tr>
-      <td class="rank-cell">${skill.score}</td>
+    <tr class="${selected ? 'is-selected' : ''}">
+      <td class="rank-cell">${sequence}</td>
       <td>
-        <div class="skill-title">${skill.name}</div>
-        <div class="skill-desc">${skill.desc}</div>
-        <div class="skill-meta">${skill.category} · ${skill.useCase}</div>
+        <div class="skill-title">
+          ${escapeHTML(skill.name)}
+        </div>
+        <div class="skill-desc">${escapeHTML(skill.desc)}</div>
+        <div class="skill-meta">${escapeHTML(skill.category)} · ${escapeHTML(skill.useCase)}</div>
       </td>
       <td>
         <span class="vendor-badge" style="--vendor-color: ${vendorStyle.primary}">
@@ -62,11 +50,15 @@ function skillRow(skill: Skill): string {
           ${skill.grade}
         </span>
       </td>
-      <td class="dimension-cell">
-        <span>${skill.practicality}</span>
-        <span>${skill.accessibility}</span>
-        <span>${skill.maturity}</span>
-        <span>${skill.uniqueness}</span>
+      <td class="score-cell">${skill.score}</td>
+      <td>${dimensionBars(skill)}</td>
+      <td>
+        <span class="date-tag">${formatDateTag(skill.publishedAt)}</span>
+      </td>
+      <td>
+        <a class="source-link" href="${escapeHTML(sourceUrl(skill))}" target="_blank" rel="noopener">
+          ${escapeHTML(sourceLabel(skill))}
+        </a>
       </td>
       <td>
         <button
@@ -92,6 +84,10 @@ function updateControls(root: HTMLElement): void {
   root.querySelectorAll<HTMLButtonElement>('[data-grade-filter]').forEach((button) => {
     button.classList.toggle('is-active', button.dataset.gradeFilter === state.gradeFilter)
   })
+  root.querySelectorAll<HTMLButtonElement>('[data-page-size]').forEach((button) => {
+    const size = button.dataset.pageSize === 'all' ? -1 : Number(button.dataset.pageSize)
+    button.classList.toggle('is-active', size === state.pageSize)
+  })
 
   const search = root.querySelector<HTMLInputElement>('[data-search]')
   const sort = root.querySelector<HTMLSelectElement>('[data-sort]')
@@ -100,80 +96,108 @@ function updateControls(root: HTMLElement): void {
 }
 
 function renderToast(root: HTMLElement): void {
-  const toastContainer = root.querySelector<HTMLElement>('[data-compare-toast]')
-  if (!toastContainer) return
+  const toast = root.querySelector<HTMLElement>('[data-compare-toast]')
+  if (!toast) return
 
-  const { compareIds } = store.get()
-  if (compareIds.length === 0) {
-    toastContainer.innerHTML = ''
-    return
-  }
-
-  toastContainer.innerHTML = `
-    <div class="compare-chip" style="width: 100%; justify-content: space-between; margin-bottom: 1rem; padding: 0.5rem 1rem;">
-      <span>已選擇 <b>${compareIds.length}</b> 個技能進行比較 (上限 3 個)</span>
-      <div style="display: flex; gap: 0.5rem;">
-        <button class="ghost-button" type="button" data-toast-clear style="min-height: 2rem;">清除</button>
-        <button class="ghost-button" type="button" data-toast-go style="border-color: var(--vendor-gemini); color: var(--vendor-gemini); min-height: 2rem;">立即比較 →</button>
+  const count = store.get().compareIds.length
+  toast.innerHTML = count
+    ? `
+      <div class="compare-chip compare-chip--wide">
+        <span>已選擇 <b>${count}</b> 個技能，上限 3 個</span>
+        <span>
+          <button class="ghost-button" type="button" data-toast-clear>清除</button>
+          <button class="ghost-button" type="button" data-toast-go>比較</button>
+        </span>
       </div>
+    `
+    : ''
+
+  toast.querySelector('[data-toast-clear]')?.addEventListener('click', () => store.clearCompare())
+  toast.querySelector('[data-toast-go]')?.addEventListener('click', () => store.setActiveTab('analysis'))
+}
+
+function renderPagination(totalItems: number): string {
+  const { currentPage, pageSize } = store.get()
+  const limit = pageSize === -1 ? totalItems || 1 : pageSize
+  const totalPages = Math.max(1, Math.ceil(totalItems / limit))
+  const start = totalItems === 0 ? 0 : (currentPage - 1) * limit + 1
+  const end = Math.min(currentPage * limit, totalItems)
+
+  return `
+    <div class="pagination">
+      <span>顯示 ${start}-${end} 筆，共 ${totalItems} 筆</span>
+      <span>
+        <button class="ghost-button" type="button" data-page="prev" ${currentPage === 1 ? 'disabled' : ''}>上一頁</button>
+        <strong>${currentPage} / ${totalPages}</strong>
+        <button class="ghost-button" type="button" data-page="next" ${currentPage === totalPages ? 'disabled' : ''}>下一頁</button>
+      </span>
     </div>
   `
-
-  toastContainer.querySelector('[data-toast-clear]')?.addEventListener('click', () => {
-    store.clearCompare()
-  })
-
-  toastContainer.querySelector('[data-toast-go]')?.addEventListener('click', () => {
-    store.setActiveTab('radar')
-  })
 }
 
 function renderRows(root: HTMLElement): void {
   updateControls(root)
   renderToast(root)
 
-  const rows = visibleSkills()
+  const rows = visibleSkills(store.get())
   const count = root.querySelector<HTMLElement>('[data-result-count]')
   const tbody = root.querySelector<HTMLTableSectionElement>('[data-skill-rows]')
-
   if (count) count.textContent = `${rows.length} / ${SKILLS.length}`
   if (!tbody) return
 
-  tbody.innerHTML = rows.length
-    ? rows.map(skillRow).join('')
-    : `<tr><td colspan="6" class="empty-row">沒有符合條件的技能</td></tr>`
+  const { currentPage, pageSize } = store.get()
+  const limit = pageSize === -1 ? rows.length || 1 : pageSize
+  const startIndex = (currentPage - 1) * limit
+  const paginatedRows = rows.slice(startIndex, currentPage * limit)
+
+  tbody.innerHTML = paginatedRows.length
+    ? paginatedRows.map((skill, index) => skillRow(skill, startIndex + index + 1)).join('')
+    : `<tr><td colspan="9" class="empty-row">沒有符合條件的技能</td></tr>`
+
+  const pagination = root.querySelector<HTMLElement>('[data-pagination-container]')
+  if (pagination) pagination.innerHTML = renderPagination(rows.length)
+
+  const announcer = root.querySelector<HTMLElement>('#a11y-announcer')
+  if (announcer) announcer.textContent = `已載入 ${paginatedRows.length} 筆結果，共 ${rows.length} 筆。`
 }
 
 export function mountLeaderboard(root: HTMLElement): void {
   root.innerHTML = `
     <div class="section-heading">
       <div>
-        <p class="eyebrow">Leaderboard</p>
-        <h2>技能排行榜</h2>
+        <p class="eyebrow">排行榜</p>
+        <h2>技能明細</h2>
       </div>
       <span class="result-count" data-result-count></span>
     </div>
+    <div id="a11y-announcer" aria-live="polite" class="sr-only"></div>
     <div class="toolbar">
       <div class="segmented-control" aria-label="廠商篩選">
         <button type="button" data-vendor-filter="all">全部</button>
-        ${VENDORS.map((vendor) => (
-          `<button type="button" data-vendor-filter="${vendor}">${vendor}</button>`
-        )).join('')}
+        ${VENDORS.map((vendor) => `<button type="button" data-vendor-filter="${vendor}">${vendor}</button>`).join('')}
       </div>
       <div class="segmented-control" aria-label="等級篩選">
         <button type="button" data-grade-filter="all">全部</button>
-        ${GRADES.map((grade) => (
-          `<button type="button" data-grade-filter="${grade.key}">${grade.key}</button>`
-        )).join('')}
+        ${GRADES.map((grade) => `<button type="button" data-grade-filter="${grade.key}">${grade.key}</button>`).join('')}
       </div>
       <label class="field">
         <span>搜尋</span>
         <input type="search" data-search placeholder="技能、用途、來源" />
       </label>
+      <div class="field">
+        <span>每頁</span>
+        <div class="segmented-control" aria-label="每頁顯示列數">
+          <button type="button" data-page-size="5">5</button>
+          <button type="button" data-page-size="10">10</button>
+          <button type="button" data-page-size="15">15</button>
+          <button type="button" data-page-size="all">全部</button>
+        </div>
+      </div>
       <label class="field field--compact">
         <span>排序</span>
         <select data-sort>
           <option value="score">分數</option>
+          <option value="date">日期</option>
           <option value="name">名稱</option>
           <option value="vendor">廠商</option>
         </select>
@@ -183,18 +207,12 @@ export function mountLeaderboard(root: HTMLElement): void {
     <div class="table-frame">
       <table>
         <thead>
-          <tr>
-            <th>分數</th>
-            <th>技能</th>
-            <th>廠商</th>
-            <th>等級</th>
-            <th>四維</th>
-            <th>比較</th>
-          </tr>
+          <tr><th>序號</th><th>技能</th><th>廠商</th><th>等級</th><th>分數</th><th>四維</th><th>日期</th><th>資料來源</th><th>比較</th></tr>
         </thead>
         <tbody data-skill-rows></tbody>
       </table>
     </div>
+    <div data-pagination-container></div>
   `
 
   root.addEventListener('click', (event) => {
@@ -202,15 +220,29 @@ export function mountLeaderboard(root: HTMLElement): void {
     const vendorButton = target.closest<HTMLButtonElement>('[data-vendor-filter]')
     const gradeButton = target.closest<HTMLButtonElement>('[data-grade-filter]')
     const compareButton = target.closest<HTMLButtonElement>('[data-compare]')
+    const pageSizeButton = target.closest<HTMLButtonElement>('[data-page-size]')
+    const pageButton = target.closest<HTMLButtonElement>('[data-page]')
 
     if (vendorButton) store.setVendor(vendorButton.dataset.vendorFilter as Vendor | 'all')
     if (gradeButton) store.setGrade(gradeButton.dataset.gradeFilter as GradeKey | 'all')
     if (compareButton) store.toggleCompare(Number(compareButton.dataset.compare))
+    if (pageSizeButton) {
+      const value = pageSizeButton.dataset.pageSize
+      store.setPageSize(value === 'all' ? -1 : Number(value))
+    }
+    if (pageButton) {
+      const { currentPage, pageSize } = store.get()
+      const rows = visibleSkills(store.get())
+      const limit = pageSize === -1 ? rows.length || 1 : pageSize
+      const totalPages = Math.max(1, Math.ceil(rows.length / limit))
+      if (pageButton.dataset.page === 'prev' && currentPage > 1) store.setPage(currentPage - 1)
+      if (pageButton.dataset.page === 'next' && currentPage < totalPages) store.setPage(currentPage + 1)
+    }
   })
 
-  root.querySelector<HTMLInputElement>('[data-search]')?.addEventListener('input', (event) => {
-    store.setSearch((event.currentTarget as HTMLInputElement).value)
-  })
+  root.querySelector<HTMLInputElement>('[data-search]')?.addEventListener('input', debounce((event: Event) => {
+    store.setSearch((event.target as HTMLInputElement).value)
+  }, 300))
 
   root.querySelector<HTMLSelectElement>('[data-sort]')?.addEventListener('change', (event) => {
     store.setSort((event.currentTarget as HTMLSelectElement).value as AppState['sortBy'])

@@ -1,0 +1,430 @@
+{
+  "checkedAt": "2026-06-27T07:48:29.106Z",
+  "sources": [
+    {
+      "name": "Google AI Blog",
+      "url": "https://blog.google/technology/ai/",
+      "checkedAt": "2026-06-27T07:48:29.106Z",
+      "changed": true,
+      "hash": "6d0db8c34b0504e5",
+      "items": [
+        {
+          "changed": true,
+          "hash": "1aa4dcf6c54d6546",
+          "title": "Skip to main content",
+          "url": "https://blog.google/technology/ai/"
+        },
+        {
+          "changed": true,
+          "hash": "eec80f03147f4ec6",
+          "title": "Gemini models",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/"
+        },
+        {
+          "changed": true,
+          "hash": "a3020625cdb2b0cf",
+          "title": "Developer tools",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/"
+        },
+        {
+          "changed": true,
+          "hash": "b5fe0c4d27eed7bb",
+          "title": "See all AI updates",
+          "url": "https://blog.google/innovation-and-ai/"
+        },
+        {
+          "changed": true,
+          "hash": "97c5b1934a2a9891",
+          "title": "Sustainability",
+          "url": "https://blog.google/company-news/outreach-and-initiatives/sustainability/"
+        },
+        {
+          "changed": true,
+          "hash": "30a15046e2c0d27b",
+          "title": "Sundar Pichai, CEO",
+          "url": "https://blog.google/authors/sundar-pichai/"
+        },
+        {
+          "changed": true,
+          "hash": "19bea396889d1361",
+          "title": "I/O 2026: Welcome to the agentic Gemini era The latest from Google I/O: See how we’re helping you get more done with Gemini.",
+          "url": "https://blog.google/innovation-and-ai/sundar-pichai-io-2026/"
+        },
+        {
+          "changed": true,
+          "hash": "61fe2f3bf9960757",
+          "title": "5 ways to learn with study notebooks in the Gemini app",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-study-notebooks/"
+        },
+        {
+          "changed": true,
+          "hash": "39f1d35441ed3532",
+          "title": "Save time and grow your business with new Gemini tools",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-features-for-businesses/"
+        },
+        {
+          "changed": true,
+          "hash": "0288396a62c7a623",
+          "title": "The Gemini app becomes more agentic, delivering proactive, 24/7 help",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/next-evolution-gemini-app/"
+        },
+        {
+          "changed": true,
+          "hash": "cd1c625c029dfe68",
+          "title": "New research shows how AMIE, our medical AI, could help manage health conditions.",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature/"
+        },
+        {
+          "changed": true,
+          "hash": "8275230e0ff9005e",
+          "title": "Interactions API: our primary interface for Gemini models and agents",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/interactions-api-general-availability/"
+        }
+      ],
+      "status": 200,
+      "title": "Official Google AI news and updates | Google Blog"
+    },
+    {
+      "name": "Google Developers Blog",
+      "url": "https://developers.googleblog.com/",
+      "checkedAt": "2026-06-27T07:48:29.106Z",
+      "changed": true,
+      "hash": "ff1775e7d6ffd862",
+      "items": [
+        {
+          "changed": true,
+          "hash": "831960542e656788",
+          "title": "Measuring What Matters with Jules AI coding agents are rapidly shifting from reactive assistants that complete tasks when prompted to ...",
+          "url": "https://developers.googleblog.com/measuring-what-matters-with-jules/"
+        },
+        {
+          "changed": true,
+          "hash": "2d93b3887e565ef5",
+          "title": "Build Cross-Language Multi-Agent Team with Google’s Agent Development Kit and A2A",
+          "url": "https://developers.googleblog.com/build-cross-language-multi-agent-team-with-google-agent-development-kit-and-a2a/"
+        },
+        {
+          "changed": true,
+          "hash": "9ebfd008003eed26",
+          "title": "How A2A is Building a World of Collaborative Agents",
+          "url": "https://developers.googleblog.com/how-a2a-is-building-a-world-of-collaborative-agents/"
+        },
+        {
+          "changed": true,
+          "hash": "1ab70b2e8bf41a3b",
+          "title": "A2UI + MCP Apps: Combining the best of declarative and custom agentic UIs",
+          "url": "https://developers.googleblog.com/a2ui-and-mcp-apps/"
+        },
+        {
+          "changed": true,
+          "hash": "b5dc967d57ceabb7",
+          "title": "Announcing the Agentic Resource Discovery specification",
+          "url": "https://developers.googleblog.com/announcing-the-agentic-resource-discovery-specification/"
+        },
+        {
+          "changed": true,
+          "hash": "39a1f91b54db0511",
+          "title": "Bringing Gemma 4 12B to your Laptop: Unlocking Local, Agentic Workflows with Google…",
+          "url": "https://developers.googleblog.com/bringing-gemma-4-12b-to-your-laptop-unlocking-local-agentic-workflows-with-google-ai-edge/"
+        },
+        {
+          "changed": true,
+          "hash": "32c638081a2be1a1",
+          "title": "Supercharge your integration workflow with the Google Pay & Wallet Developer MCP se…",
+          "url": "https://developers.googleblog.com/supercharge-your-integration-workflow-with-the-google-pay-wallet-developer-mcp-server/"
+        },
+        {
+          "changed": true,
+          "hash": "9f495c850f51115a",
+          "title": "Announcing ADK for Kotlin and ADK for Android 0.1.0: Building AI Agents on Android …",
+          "url": "https://developers.googleblog.com/adk-kotlin-android-building-ai-agents/"
+        },
+        {
+          "changed": true,
+          "hash": "db986597b0b1bc59",
+          "title": "A Smarter Google AI Edge Gallery: MCP integration, notifications, and session conti…",
+          "url": "https://developers.googleblog.com/a-smarter-google-ai-edge-gallery-mcp-integration-notifications-and-session-continuity/"
+        },
+        {
+          "changed": true,
+          "hash": "0196e4f155e7fa73",
+          "title": "Blazing fast on-device GenAI with LiteRT-LM",
+          "url": "https://developers.googleblog.com/blazing-fast-on-device-genai-with-litert-lm/"
+        },
+        {
+          "changed": true,
+          "hash": "7b347aff6f00c703",
+          "title": "Build Long-running AI agents that pause, resume, and never lose context with ADK",
+          "url": "https://developers.googleblog.com/build-long-running-ai-agents-that-pause-resume-and-never-lose-context-with-adk/"
+        },
+        {
+          "changed": true,
+          "hash": "e76d343fc391ad3a",
+          "title": "Google API Console",
+          "url": "https://console.developers.google.com/"
+        }
+      ],
+      "status": 200,
+      "title": "Home - Google Developers Blog"
+    },
+    {
+      "name": "OpenAI Blog",
+      "url": "https://openai.com/news/",
+      "checkedAt": "2026-06-27T07:48:29.106Z",
+      "changed": true,
+      "hash": "bfef91af9ebfa5a2",
+      "items": [],
+      "status": 403,
+      "title": "Untitled"
+    },
+    {
+      "name": "OpenAI Developers",
+      "url": "https://developers.openai.com/",
+      "checkedAt": "2026-06-27T07:48:29.106Z",
+      "changed": true,
+      "hash": "d00f235d039db98f",
+      "items": [
+        {
+          "changed": true,
+          "hash": "cf9fee78cd7f5ff1",
+          "title": "Docs Guides and concepts for the OpenAI API",
+          "url": "https://developers.openai.com/api/docs"
+        },
+        {
+          "changed": true,
+          "hash": "f719f4cf20d8e9cd",
+          "title": "API reference Endpoints, parameters, and responses",
+          "url": "https://developers.openai.com/api/reference/overview"
+        },
+        {
+          "changed": true,
+          "hash": "ee88cf966d92ea51",
+          "title": "Docs Guides, concepts, and product docs for Codex",
+          "url": "https://developers.openai.com/codex"
+        },
+        {
+          "changed": true,
+          "hash": "531ebdd649357ba9",
+          "title": "Use cases Example workflows and tasks teams hand to Codex",
+          "url": "https://developers.openai.com/codex/use-cases"
+        },
+        {
+          "changed": true,
+          "hash": "d52ce70e07333f3d",
+          "title": "Apps SDK Build apps to extend ChatGPT",
+          "url": "https://developers.openai.com/apps-sdk"
+        },
+        {
+          "changed": true,
+          "hash": "39669c68e0e791cc",
+          "title": "Workspace Agents Trigger published ChatGPT workspace agents",
+          "url": "https://developers.openai.com/workspace-agents"
+        },
+        {
+          "changed": true,
+          "hash": "8f274a4a8281dfcc",
+          "title": "Commerce Build commerce flows in ChatGPT",
+          "url": "https://developers.openai.com/commerce"
+        },
+        {
+          "changed": true,
+          "hash": "15816b6028a52398",
+          "title": "Ads Publish and measure ads in ChatGPT",
+          "url": "https://developers.openai.com/ads"
+        },
+        {
+          "changed": true,
+          "hash": "a287653f5d187e3e",
+          "title": "Cookbook Notebook examples for building with OpenAI models",
+          "url": "https://developers.openai.com/cookbook"
+        },
+        {
+          "changed": true,
+          "hash": "51eb7c23b0c1f81b",
+          "title": "Learn Docs, videos, and demo apps for building with OpenAI",
+          "url": "https://developers.openai.com/learn"
+        },
+        {
+          "changed": true,
+          "hash": "cb910e20e0403188",
+          "title": "API Dashboard",
+          "url": "https://platform.openai.com/login"
+        },
+        {
+          "changed": true,
+          "hash": "66a221499a135690",
+          "title": "Latest: GPT-5.5",
+          "url": "https://developers.openai.com/api/docs/guides/latest-model"
+        }
+      ],
+      "status": 200,
+      "title": "OpenAI Developers"
+    },
+    {
+      "name": "Anthropic News",
+      "url": "https://www.anthropic.com/news",
+      "checkedAt": "2026-06-27T07:48:29.106Z",
+      "changed": true,
+      "hash": "5b0a05e154a9ea06",
+      "items": [
+        {
+          "changed": true,
+          "hash": "459f7a80ec847ed5",
+          "title": "Skip to main content",
+          "url": "https://www.anthropic.com/news"
+        },
+        {
+          "changed": true,
+          "hash": "bce78d1772009946",
+          "title": "Product Jun 23, 2026 Introducing Claude Tag Claude Tag is a new way for teams to work with Claude.",
+          "url": "https://www.anthropic.com/news/introducing-claude-tag"
+        },
+        {
+          "changed": true,
+          "hash": "befa881415e520ef",
+          "title": "Jun 17, 2026 Announcements Anthropic opens Seoul office and announces new partnerships across the Korean AI ecosystem",
+          "url": "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem"
+        },
+        {
+          "changed": true,
+          "hash": "23b3df1405878473",
+          "title": "Jun 12, 2026 Announcements TCS and Anthropic partner to bring Claude to regulated industries",
+          "url": "https://www.anthropic.com/news/tcs-anthropic-partnership"
+        },
+        {
+          "changed": true,
+          "hash": "f4d7e087f7dc4433",
+          "title": "Jun 11, 2026 Announcements DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on",
+          "url": "https://www.anthropic.com/news/dxc-anthropic-alliance"
+        },
+        {
+          "changed": true,
+          "hash": "992fbeb2a49f93f5",
+          "title": "Jun 11, 2026 Announcements Introducing Claude Corps",
+          "url": "https://www.anthropic.com/news/claude-corps"
+        },
+        {
+          "changed": true,
+          "hash": "443d0c34e5a83879",
+          "title": "Jun 9, 2026 Announcements Claude Fable 5 and Claude Mythos 5",
+          "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5"
+        },
+        {
+          "changed": true,
+          "hash": "e187ebc5f767b9d2",
+          "title": "Jun 3, 2026 Announcements Introducing the Services Track and Partner Hub of the Claude Partner Network",
+          "url": "https://www.anthropic.com/news/services-track-partner-hub"
+        },
+        {
+          "changed": true,
+          "hash": "cc58f7272ed96cfc",
+          "title": "Jun 3, 2026 Policy What we learned mapping a year’s worth of AI-enabled cyber threats",
+          "url": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack"
+        },
+        {
+          "changed": true,
+          "hash": "52525bfe53e97703",
+          "title": "Claude Code Enterprise",
+          "url": "https://claude.com/product/claude-code/enterprise"
+        },
+        {
+          "changed": true,
+          "hash": "4b13dd2167db04aa",
+          "title": "Claude Cowork",
+          "url": "https://claude.com/product/cowork"
+        },
+        {
+          "changed": true,
+          "hash": "537dc3cd848bac9c",
+          "title": "Claude Design",
+          "url": "https://claude.com/product/design"
+        }
+      ],
+      "status": 200,
+      "title": "Newsroom \\ Anthropic"
+    },
+    {
+      "name": "Claude Docs",
+      "url": "https://docs.anthropic.com/",
+      "checkedAt": "2026-06-27T07:48:29.106Z",
+      "changed": true,
+      "hash": "ba369f081610e72d",
+      "items": [
+        {
+          "changed": true,
+          "hash": "52a223633d790271",
+          "title": "Claude Platform Docs",
+          "url": "https://docs.anthropic.com/docs/en/home"
+        },
+        {
+          "changed": true,
+          "hash": "bfb4c910326f5f4d",
+          "title": "Managed Agents",
+          "url": "https://docs.anthropic.com/docs/en/managed-agents/overview"
+        },
+        {
+          "changed": true,
+          "hash": "022175e70583c191",
+          "title": " API reference",
+          "url": "https://docs.anthropic.com/docs/en/api/overview"
+        },
+        {
+          "changed": true,
+          "hash": "38a03f07f7efdc6c",
+          "title": "Claude Platform Docs",
+          "url": "https://docs.anthropic.com/docs"
+        },
+        {
+          "changed": true,
+          "hash": "1ae49f25746d1334",
+          "title": "Claude on AWS",
+          "url": "https://claude.com/partners/amazon-bedrock"
+        },
+        {
+          "changed": true,
+          "hash": "7d3b0e07ef1c17ba",
+          "title": "Claude on Google Cloud",
+          "url": "https://claude.com/partners/google-cloud-vertex-ai"
+        },
+        {
+          "changed": true,
+          "hash": "4637c70ebba0db99",
+          "title": "Powered by Claude",
+          "url": "https://claude.com/partners/powered-by-claude"
+        },
+        {
+          "changed": true,
+          "hash": "c36d06a1670022f3",
+          "title": "Availability",
+          "url": "https://www.anthropic.com/supported-countries"
+        },
+        {
+          "changed": true,
+          "hash": "03351346fd68ba4e",
+          "title": " Get API key",
+          "url": "https://docs.anthropic.com/settings/keys"
+        },
+        {
+          "changed": true,
+          "hash": "90675b7165a2f193",
+          "title": " API reference ",
+          "url": "https://docs.anthropic.com/docs/en/api/messages/create"
+        },
+        {
+          "changed": true,
+          "hash": "5c3e9dbe0761dea2",
+          "title": " API reference ",
+          "url": "https://docs.anthropic.com/docs/en/api/beta/sessions"
+        },
+        {
+          "changed": true,
+          "hash": "32b3ded6d0f32b92",
+          "title": "Define your agent ",
+          "url": "https://docs.anthropic.com/docs/en/managed-agents/agent-setup"
+        }
+      ],
+      "status": 200,
+      "title": "Documentation - Claude Platform Docs"
+    }
+  ]
+}

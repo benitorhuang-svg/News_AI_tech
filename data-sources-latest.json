@@ -1,6 +1,126 @@
 [
   {
     "vendor": "Gemini",
+    "title": "3 ways to prep for your next big race with Search",
+    "url": "https://blog.google/products-and-platforms/products/search/running-race-training-tips/",
+    "date": "Thu, 10 Sep 2026 16:00:00 +0000"
+  },
+  {
+    "vendor": "Gemini",
+    "title": "Get ready for the game with new football features in Search",
+    "url": "https://blog.google/products-and-platforms/products/search/football-features-google-search/",
+    "date": "Wed, 09 Sep 2026 16:00:00 +0000"
+  },
+  {
+    "vendor": "Gemini",
+    "title": "Recreating a 70-year love story frame by frame",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/love-rendered-film/",
+    "date": "Wed, 09 Sep 2026 16:00:00 +0000"
+  },
+  {
+    "vendor": "Gemini",
+    "title": "Proactive cyber defense for governments and enterprises",
+    "url": "https://blog.google/innovation-and-ai/technology/safety-security/fairwind-program/",
+    "date": "Wed, 02 Sep 2026 15:40:00 +0000"
+  },
+  {
+    "vendor": "Gemini",
+    "title": "The latest AI news we announced in August 2026",
+    "url": "https://blog.google/innovation-and-ai/technology/google-ai-updates-august-2026/",
+    "date": "Tue, 01 Sep 2026 20:45:00 +0000"
+  },
+  {
+    "vendor": "Gemini",
+    "title": "Try Google Pics: Easy image creation and editing in Google Workspace",
+    "url": "https://blog.google/products-and-platforms/products/workspace/google-pics/",
+    "date": "Tue, 01 Sep 2026 16:00:00 +0000"
+  },
+  {
+    "vendor": "Gemini",
+    "title": "3 new ways to plan and book travel in Search",
+    "url": "https://blog.google/products-and-platforms/products/search/book-travel-ai-mode/",
+    "date": "Thu, 27 Aug 2026 16:00:00 +0000"
+  },
+  {
+    "vendor": "Gemini",
+    "title": "5 ways to upgrade your home decor with Google Search",
+    "url": "https://blog.google/products-and-platforms/products/search/home-decor-tips/",
+    "date": "Tue, 25 Aug 2026 16:00:00 +0000"
+  },
+  {
+    "vendor": "Gemini",
+    "title": "5 new ways to level up your learning with Search",
+    "url": "https://blog.google/products-and-platforms/products/search/back-to-school-study-tools/",
+    "date": "Wed, 19 Aug 2026 19:00:00 +0000"
+  },
+  {
+    "vendor": "Gemini",
+    "title": "Get closer to the game with Gemini and Pixel",
+    "url": "https://blog.google/products-and-platforms/products/gemini/google-gemini-pixel-football-club-partnerships/",
+    "date": "Mon, 17 Aug 2026 08:00:00 +0000"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "Perplexity trusts GPT-6 Astra with end-to-end systems",
+    "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+    "date": "Mon, 14 Sep 2026 00:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users",
+    "url": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
+    "date": "Fri, 11 Sep 2026 10:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "Cognition helps Devin test its own work with GPT‑6 Astra",
+    "url": "https://openai.com/index/cognition-devin-testing-with-astra",
+    "date": "Fri, 11 Sep 2026 16:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "How a researcher uses Codex and ChatGPT to search for new antimicrobial molecules",
+    "url": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
+    "date": "Thu, 10 Sep 2026 16:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "Now everyone can put data to work",
+    "url": "https://openai.com/index/put-data-to-work",
+    "date": "Thu, 10 Sep 2026 15:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "Introducing ChatGPT for Financial Services",
+    "url": "https://openai.com/index/introducing-chatgpt-financial-services",
+    "date": "Thu, 10 Sep 2026 07:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "Expanding AI access and cyber defense for federal, state, local, and tribal governments",
+    "url": "https://openai.com/index/expanding-ai-access-us-government",
+    "date": "Thu, 10 Sep 2026 07:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "Build more natural voice experiences with GPT‑Live‑1 in the API",
+    "url": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
+    "date": "Thu, 10 Sep 2026 00:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "Introducing the Agents API",
+    "url": "https://openai.com/index/introducing-the-agents-api",
+    "date": "Thu, 10 Sep 2026 00:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "The AI policy window is open. We need to act.",
+    "url": "https://openai.com/index/ai-policy-window",
+    "date": "Wed, 09 Sep 2026 13:00:00 GMT"
+  },
+  {
+    "vendor": "Gemini",
     "title": "Our latest Google Finance upgrades, including a new app",
     "url": "https://blog.google/products-and-platforms/products/search/google-finance-updates-june-2026/",
     "date": "Thu, 25 Jun 2026 16:00:00 +0000"

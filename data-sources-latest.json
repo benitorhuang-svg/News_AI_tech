@@ -1,6 +1,126 @@
 [
   {
     "vendor": "Gemini",
+    "title": "New experts join Google’s AI &amp; Economy team",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/expanding-ai-economy-research-bench/",
+    "date": "Fri, 18 Sep 2026 14:00:00 +0000"
+  },
+  {
+    "vendor": "Gemini",
+    "title": "Co-creating the future of fashion with Google",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/google-flow-fashion-week/",
+    "date": "Fri, 18 Sep 2026 13:00:00 +0000"
+  },
+  {
+    "vendor": "Gemini",
+    "title": "Making global data easier to explore",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/google-un-data-commons-platform/",
+    "date": "Thu, 17 Sep 2026 20:00:00 +0000"
+  },
+  {
+    "vendor": "Gemini",
+    "title": "AI for Societal Impact",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/ai-for-societal-impact/",
+    "date": "Tue, 15 Sep 2026 16:00:00 +0000"
+  },
+  {
+    "vendor": "Gemini",
+    "title": "Building AI to accelerate science and improve lives",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/ai-applications-science-people/",
+    "date": "Tue, 15 Sep 2026 16:00:00 +0000"
+  },
+  {
+    "vendor": "Gemini",
+    "title": "AI for everyone in every language",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/ai-for-every-language/",
+    "date": "Tue, 15 Sep 2026 16:00:00 +0000"
+  },
+  {
+    "vendor": "Gemini",
+    "title": "New insights from Google’s AI &amp; Economy ATLAS",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/ai-economy-atlas-september-2026/",
+    "date": "Tue, 15 Sep 2026 13:00:00 +0000"
+  },
+  {
+    "vendor": "Gemini",
+    "title": "Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/dialogues-christina-koch/",
+    "date": "Mon, 14 Sep 2026 19:00:00 +0000"
+  },
+  {
+    "vendor": "Gemini",
+    "title": "DevFest is back",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026/",
+    "date": "Mon, 14 Sep 2026 16:00:00 +0000"
+  },
+  {
+    "vendor": "Gemini",
+    "title": "3 ways to prep for your next big race with Search",
+    "url": "https://blog.google/products-and-platforms/products/search/running-race-training-tips/",
+    "date": "Thu, 10 Sep 2026 16:00:00 +0000"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "Introducing the Australian Youth Safety Blueprint",
+    "url": "https://openai.com/index/australian-youth-safety-blueprint",
+    "date": "Fri, 18 Sep 2026 12:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "How Cooley is accelerating IPO work with ChatGPT",
+    "url": "https://openai.com/index/cooley-gopublic",
+    "date": "Thu, 17 Sep 2026 12:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "Introducing Astra for Law",
+    "url": "https://openai.com/index/astra-for-law",
+    "date": "Thu, 17 Sep 2026 00:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "Helping older adults use AI in everyday life",
+    "url": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life",
+    "date": "Wed, 16 Sep 2026 16:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "Reimagining advertising with AI",
+    "url": "https://openai.com/index/reimagining-advertising-with-ai",
+    "date": "Wed, 16 Sep 2026 13:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "Hex turns complex analysis into visual reports with GPT‑6 Astra",
+    "url": "https://openai.com/index/hex-gpt-6-astra",
+    "date": "Wed, 16 Sep 2026 12:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "How to connect AI usage to business value",
+    "url": "https://openai.com/index/how-to-connect-ai-usage-to-business-value",
+    "date": "Wed, 16 Sep 2026 12:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "Our framework for reporting model misalignment",
+    "url": "https://openai.com/index/model-misalignment-reporting-framework",
+    "date": "Wed, 16 Sep 2026 17:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "How workers are unlocking new ways of working",
+    "url": "https://openai.com/index/unlocking-new-ways-of-working",
+    "date": "Wed, 16 Sep 2026 09:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "How Fyxer built an AI executive assistant people trust",
+    "url": "https://openai.com/index/fyxer",
+    "date": "Mon, 14 Sep 2026 12:00:00 GMT"
+  },
+  {
+    "vendor": "Gemini",
     "title": "Our latest Google Finance upgrades, including a new app",
     "url": "https://blog.google/products-and-platforms/products/search/google-finance-updates-june-2026/",
     "date": "Thu, 25 Jun 2026 16:00:00 +0000"

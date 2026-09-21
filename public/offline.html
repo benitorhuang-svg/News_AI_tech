@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>離線中 — AI 技能含金量評分表</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #0b0f19;
+        color: #e2e8f0;
+        font-family: system-ui, -apple-system, sans-serif;
+      }
+      .offline {
+        text-align: center;
+        padding: 2rem;
+        max-width: 420px;
+      }
+      .offline__icon {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+      }
+      .offline__title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: .75rem;
+        color: #a78bfa;
+      }
+      .offline__msg {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #94a3b8;
+        margin-bottom: 1.5rem;
+      }
+      .offline__btn {
+        display: inline-block;
+        padding: .625rem 1.5rem;
+        border-radius: .5rem;
+        background: #7c3aed;
+        color: #fff;
+        font-size: .875rem;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+        transition: background .2s;
+      }
+      .offline__btn:hover { background: #6d28d9; }
+    </style>
+  </head>
+  <body>
+    <div class="offline">
+      <div class="offline__icon">⚡</div>
+      <h1 class="offline__title">目前離線</h1>
+      <p class="offline__msg">
+        看起來你的網路斷線了。<br>
+        之前瀏覽過的頁面仍可離線使用，<br>
+        連線恢復後重新整理即可載入最新資料。
+      </p>
+      <button class="offline__btn" onclick="location.reload()">重新整理</button>
+    </div>
+  </body>
+</html>

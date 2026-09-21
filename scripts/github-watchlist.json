@@ -1,0 +1,26 @@
+[
+  { "repo": "langchain-ai/langgraph",       "category": "agent-framework",   "label": "LangGraph" },
+  { "repo": "mastra-ai/mastra",             "category": "agent-framework",   "label": "Mastra" },
+  { "repo": "crewAIInc/crewAI",             "category": "agent-framework",   "label": "CrewAI" },
+  { "repo": "microsoft/autogen",            "category": "agent-framework",   "label": "AutoGen" },
+
+  { "repo": "ollama/ollama",                "category": "inference-engine",  "label": "Ollama" },
+  { "repo": "vllm-project/vllm",            "category": "inference-engine",  "label": "vLLM" },
+  { "repo": "sgl-project/sglang",           "category": "inference-engine",  "label": "SGLang" },
+  { "repo": "ggml-org/llama.cpp",           "category": "inference-engine",  "label": "llama.cpp" },
+
+  { "repo": "BerriAI/litellm",              "category": "dev-tool",          "label": "LiteLLM" },
+  { "repo": "langfuse/langfuse",            "category": "dev-tool",          "label": "Langfuse" },
+  { "repo": "mendableai/firecrawl",         "category": "dev-tool",          "label": "Firecrawl" },
+  { "repo": "pydantic/pydantic-ai",         "category": "dev-tool",          "label": "Pydantic AI" },
+
+  { "repo": "deepseek-ai/DeepSeek-V3",      "category": "foundation-model",  "label": "DeepSeek V3" },
+  { "repo": "meta-llama/llama-models",       "category": "foundation-model",  "label": "Llama (Meta)" },
+  { "repo": "mistralai/mistral-inference",   "category": "foundation-model",  "label": "Mistral" },
+  { "repo": "QwenLM/Qwen3",                 "category": "foundation-model",  "label": "Qwen 3" },
+
+  { "repo": "open-webui/open-webui",         "category": "application",       "label": "Open WebUI" },
+  { "repo": "lobehub/lobe-chat",             "category": "application",       "label": "LobeChat" },
+  { "repo": "langgenius/dify",               "category": "application",       "label": "Dify" },
+  { "repo": "n8n-io/n8n",                    "category": "application",       "label": "n8n" }
+]

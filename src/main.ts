@@ -4,6 +4,7 @@ import '@/styles/molecules.css'
 import '@/styles/organisms.css'
 import '@/styles/report.css'
 import '@/styles/header.css'
+import '@/styles/ecosystem.css'
 import type { AppState } from '@/data/types'
 import { store } from '@/state/store'
 import { RECENT_DAY_OPTIONS } from '@/utils/date-range'
@@ -15,6 +16,7 @@ type RenderModule =
   | { renderOverview(root: HTMLElement): void }
   | { mountLeaderboard(root: HTMLElement): void }
   | { mountComparison(root: HTMLElement): void }
+  | { mountEcosystem(root: HTMLElement): void }
 
 function renderTabsNav(): string {
   const state = store.get()
@@ -22,6 +24,7 @@ function renderTabsNav(): string {
     { key: 'overview', label: '總覽' },
     { key: 'leaderboard', label: '技能排行' },
     { key: 'analysis', label: '比較分析' },
+    { key: 'ecosystem', label: '生態趨勢' },
   ] as const
 
   return `
@@ -80,6 +83,7 @@ function bindHeaderControls(header: HTMLElement): void {
 async function loadTabModule(tab: TabKey): Promise<RenderModule> {
   if (tab === 'overview') return import('@/render/overview')
   if (tab === 'leaderboard') return import('@/render/leaderboard')
+  if (tab === 'ecosystem') return import('@/render/ecosystem')
   return import('@/render/comparison')
 }
 
@@ -93,6 +97,7 @@ async function mountTabContent(tabContent: HTMLDivElement): Promise<void> {
 
   if ('renderOverview' in module) module.renderOverview(pane)
   else if ('mountLeaderboard' in module) module.mountLeaderboard(pane)
+  else if ('mountEcosystem' in module) module.mountEcosystem(pane)
   else module.mountComparison(pane)
 }
 

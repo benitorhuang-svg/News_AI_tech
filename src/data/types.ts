@@ -66,6 +66,27 @@ export interface VendorStyle {
   primary: string
 }
 
+/* ── GitHub 生態系追蹤 ── */
+export type RepoCategory =
+  | 'agent-framework'
+  | 'inference-engine'
+  | 'dev-tool'
+  | 'foundation-model'
+  | 'application'
+
+export interface GitHubRepo {
+  repo: string
+  label: string
+  category: RepoCategory
+  stars: number
+  starsWeekly: number
+  language: string
+  description: string
+  topics: string[]
+  pushedAt: string
+  collectedAt: string
+}
+
 /* ── 應用狀態 ── */
 export interface AppState {
   vendorFilter: Vendor | 'all'
@@ -76,7 +97,9 @@ export interface AppState {
   dateTo: string
   recentDays: number | null
   compareIds: number[]
-  activeTab: 'overview' | 'leaderboard' | 'analysis'
+  activeTab: 'overview' | 'leaderboard' | 'analysis' | 'ecosystem'
   currentPage: number
   pageSize: number
+  ecosystemCategory: RepoCategory | 'all'
+  ecosystemSort: 'stars' | 'starsWeekly' | 'name'
 }

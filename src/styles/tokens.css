@@ -23,4 +23,9 @@
   --container: 1220px;
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", "Microsoft JhengHei", Arial, sans-serif;
   --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --cat-agent: #7c3aed;
+  --cat-inference: #0891b2;
+  --cat-devtool: #ea580c;
+  --cat-model: #2563eb;
+  --cat-app: #16a34a;
 }

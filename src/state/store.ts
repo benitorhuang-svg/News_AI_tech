@@ -1,9 +1,9 @@
 import { SKILLS } from '@/data/skills'
-import type { AppState, Vendor, GradeKey } from '@/data/types'
+import type { AppState, Vendor, GradeKey, RepoCategory } from '@/data/types'
 import { isRecentDays, latestIsoDate, recentDateRange } from '@/utils/date-range'
 
 type Listener = () => void
-const tabs: AppState['activeTab'][] = ['overview', 'leaderboard', 'analysis']
+const tabs: AppState['activeTab'][] = ['overview', 'leaderboard', 'analysis', 'ecosystem']
 
 const state: AppState = {
   vendorFilter: 'all',
@@ -17,6 +17,8 @@ const state: AppState = {
   activeTab: 'overview',
   currentPage: 1,
   pageSize: 5,
+  ecosystemCategory: 'all',
+  ecosystemSort: 'stars',
 }
 
 const listeners: Set<Listener> = new Set()
@@ -69,6 +71,13 @@ function syncToURL(): void {
     url.searchParams.delete('compare')
   }
 
+  if (state.ecosystemCategory !== 'all') {
+    url.searchParams.set('ecocat', state.ecosystemCategory)
+  } else {
+    url.searchParams.delete('ecocat')
+  }
+  url.searchParams.set('ecosort', state.ecosystemSort)
+
   window.history.replaceState(null, '', url.toString())
 }
 
@@ -98,6 +107,8 @@ export const store = {
     if (params.has('compare')) {
       state.compareIds = params.get('compare')!.split(',').map(Number).filter(Boolean)
     }
+    if (params.has('ecocat')) state.ecosystemCategory = params.get('ecocat') as RepoCategory | 'all'
+    if (params.has('ecosort')) state.ecosystemSort = params.get('ecosort') as AppState['ecosystemSort']
   },
 
   get(): Readonly<AppState> {
@@ -182,6 +193,16 @@ export const store = {
 
   clearCompare(): void {
     state.compareIds = []
+    notify()
+  },
+
+  setEcosystemCategory(cat: RepoCategory | 'all'): void {
+    state.ecosystemCategory = cat
+    notify()
+  },
+
+  setEcosystemSort(sort: AppState['ecosystemSort']): void {
+    state.ecosystemSort = sort
     notify()
   },
 }

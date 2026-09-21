@@ -1,0 +1,53 @@
+name: Collect GitHub Ecosystem Trends
+
+on:
+  schedule:
+    - cron: '0 9 * * *' # Runs daily at 09:00 UTC (17:00 Taipei)
+  workflow_dispatch: # Allows manual trigger from GitHub UI
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  collect-trending:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run GitHub trending collector
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: npx tsx scripts/collect-github-trending.ts
+
+      - name: Check for changes
+        id: git-check
+        run: |
+          git diff --quiet || echo "changes=true" >> $GITHUB_OUTPUT
+
+      - name: Create Pull Request with Trending Data
+        if: steps.git-check.outputs.changes == 'true'
+        uses: peter-evans/create-pull-request@v8
+        with:
+          commit-message: "data: update GitHub ecosystem trending snapshot"
+          branch: "auto-update-github-trending"
+          title: "📊 GitHub 生態系趨勢更新 (${{ github.event.repository.updated_at || github.run_id }})"
+          body: |
+            GitHub Actions 已自動收集 AI 開源生態系的 GitHub Stars 趨勢資料。
+
+            更新內容：
+            - 追蹤 repo 的最新 star 數量
+            - 計算與前次快照的 weekly delta
+
+            請審閱 `github-trending-snapshot.json` 的異動。
+          delete-branch: true

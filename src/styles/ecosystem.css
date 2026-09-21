@@ -1,0 +1,254 @@
+/* ── Ecosystem Tab ── */
+
+.eco-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.eco-hero h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.eco-hero__lead {
+  color: var(--color-text-light);
+  font-size: 0.92rem;
+  line-height: 1.55;
+  max-width: 56ch;
+}
+
+/* ── Category Filters ── */
+
+.eco-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.eco-filters__btn {
+  border: 1px solid var(--color-line);
+  background: var(--color-surface);
+  color: var(--color-text-light);
+  padding: 0.3rem 0.7rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.eco-filters__btn:hover {
+  border-color: var(--color-focus);
+  color: var(--color-text);
+}
+
+.eco-filters__btn.is-active {
+  background: var(--color-focus);
+  border-color: var(--color-focus);
+  color: #fff;
+}
+
+/* ── Top Movers Strip ── */
+
+.eco-movers {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.eco-mover-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  box-shadow: var(--shadow-sm);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.eco-mover-card:hover {
+  border-color: var(--color-focus);
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.1);
+}
+
+.eco-mover-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.eco-mover-card__label {
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: var(--color-text);
+}
+
+.eco-mover-card__delta {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #16a34a;
+}
+
+.eco-mover-card__delta--zero {
+  color: var(--color-muted);
+}
+
+.eco-mover-card__stars {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--color-muted);
+}
+
+.eco-mover-card__desc {
+  font-size: 0.76rem;
+  color: var(--color-text-light);
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ── Category Badge ── */
+
+.cat-badge {
+  display: inline-block;
+  padding: 0.15rem 0.45rem;
+  border-radius: var(--radius-xs);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #fff;
+  background: var(--cat-color, var(--color-muted));
+  white-space: nowrap;
+}
+
+/* ── Repo Table ── */
+
+.eco-table-wrap {
+  overflow-x: auto;
+  margin-top: 0.5rem;
+}
+
+.eco-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+.eco-table th {
+  text-align: left;
+  font-weight: 600;
+  color: var(--color-text-light);
+  padding: 0.5rem 0.75rem;
+  border-bottom: 2px solid var(--color-line);
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.12s;
+}
+
+.eco-table th:hover {
+  color: var(--color-focus);
+}
+
+.eco-table th.is-sorted {
+  color: var(--color-focus);
+}
+
+.eco-table td {
+  padding: 0.55rem 0.75rem;
+  border-bottom: 1px solid var(--color-line);
+  vertical-align: middle;
+}
+
+.eco-table tr:hover td {
+  background: var(--color-surface-alt);
+}
+
+.eco-table__stars,
+.eco-table__delta {
+  font-family: var(--font-mono);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.eco-table__delta--positive {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.eco-table__delta--zero {
+  color: var(--color-muted);
+}
+
+.eco-table__name a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.eco-table__name a:hover {
+  color: var(--color-focus);
+  text-decoration: underline;
+}
+
+.eco-table__lang {
+  color: var(--color-muted);
+  font-size: 0.76rem;
+}
+
+/* ── Chart Frame ── */
+
+.chart-frame--star {
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  margin-top: 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+/* ── Empty State ── */
+
+.eco-empty {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+.eco-empty__icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/* ── Layout ── */
+
+.eco-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .eco-split {
+    grid-template-columns: 1fr;
+  }
+
+  .eco-movers {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .eco-movers {
+    grid-template-columns: 1fr;
+  }
+}

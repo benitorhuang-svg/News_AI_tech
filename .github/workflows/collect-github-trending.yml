@@ -27,7 +27,7 @@ jobs:
 
       - name: Run GitHub trending collector
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN || secrets.GITHUB_TOKEN }}
         run: npx tsx scripts/collect-github-trending.ts
 
       - name: Check for changes

@@ -1,5 +1,6 @@
 import latestSources from '@/../data-sources-latest.json'
 import { drawVendorBarChart } from '@/charts/bar-chart'
+import { GITHUB_REPOS, CATEGORY_COLOR_MAP } from '@/data/github-trending'
 import { SKILLS, VENDORS, VENDOR_STYLES } from '@/data/skills'
 import type { Vendor } from '@/data/types'
 import { skillsInDateRange } from '@/render/leaderboard-utils'
@@ -54,6 +55,30 @@ function sourceRows(): string {
         </div>
         <strong class="source-item__title">${escapeHTML(source.title)}</strong>
         <a href="${source.url}" target="_blank" rel="noopener">查看來源</a>
+      </article>
+    `
+  }).join('')
+}
+
+function topRepoRows(): string {
+  const topRepos = [...GITHUB_REPOS]
+    .sort((a, b) => b.stars - a.stars)
+    .slice(0, 3)
+
+  return topRepos.map((repo) => {
+    const color = CATEGORY_COLOR_MAP[repo.category] ?? '#667085'
+    const stars = repo.stars >= 1000 ? `${(repo.stars / 1000).toFixed(1)}k` : `${repo.stars}`
+
+    return `
+      <article class="source-item">
+        <div>
+          <span class="cat-badge" style="--cat-color: ${color}">
+            ${escapeHTML(repo.label)}
+          </span>
+          <small>${stars} ⭐ · ${escapeHTML(repo.language)}</small>
+        </div>
+        <strong class="source-item__title">${escapeHTML(repo.description)}</strong>
+        <a href="https://github.com/${repo.repo}" target="_blank" rel="noopener">查看專案</a>
       </article>
     `
   }).join('')
@@ -118,11 +143,31 @@ export function renderOverview(root: HTMLElement): void {
             <div class="summary-list">
               ${sourceRows()}
             </div>
+
+            <div class="section-heading" style="margin-top: 1.5rem; display: flex; justify-content: space-between; align-items: flex-end;">
+              <div>
+                <p class="eyebrow">開源生態</p>
+                <h2>熱門 AI 專案</h2>
+              </div>
+              <button type="button" class="btn" data-goto-ecosystem style="padding: 0.3rem 0.65rem; font-size: 0.8rem; cursor: pointer;">
+                生態趨勢 ↗
+              </button>
+            </div>
+            <div class="summary-list">
+              ${topRepoRows()}
+            </div>
           </section>
         </div>
       </div>
     </div>
   `
+
+  const ecoBtn = root.querySelector<HTMLButtonElement>('[data-goto-ecosystem]')
+  if (ecoBtn) {
+    ecoBtn.addEventListener('click', () => {
+      store.setActiveTab('ecosystem')
+    })
+  }
 
   drawVendorBarChart(qs<HTMLCanvasElement>('#overview-bar-canvas'), getVendorAverages(skills))
 }

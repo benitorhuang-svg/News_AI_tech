@@ -61,7 +61,7 @@ interface SkillModule {
   skill: RawSkill
 }
 
-const modules = import.meta.glob<SkillModule>('./(gemini|chatgpt|claude)/*.ts', { eager: true })
+const modules = import.meta.glob<SkillModule>('./{gemini,chatgpt,claude}/*.ts', { eager: true })
 
 // 排序路徑：Gemini, ChatGPT, Claude；且內部檔名由小到大排序
 const vendorsOrder = ['gemini', 'chatgpt', 'claude']

@@ -16,9 +16,15 @@ const baseState: AppState = {
   activeTab: 'leaderboard',
   currentPage: 1,
   pageSize: 5,
+  ecosystemCategory: 'all',
+  ecosystemSort: 'stars',
 }
 
 describe('leaderboard filters', () => {
+  it('loads all 50 skills from vendor directories', () => {
+    expect(SKILLS.length).toBe(50)
+  })
+
   it('filters skills by an inclusive published date range', () => {
     const results = visibleSkills({
       ...baseState,

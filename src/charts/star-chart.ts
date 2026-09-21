@@ -39,7 +39,7 @@ export function drawStarChart(canvas: HTMLCanvasElement, repos: GitHubRepo[]): v
         legend: { display: false },
         tooltip: {
           callbacks: {
-            label: (ctx) => `+${ctx.parsed.x.toLocaleString()} ⭐ this week`,
+            label: (ctx) => `+${(ctx.parsed.x ?? 0).toLocaleString()} ⭐ this week`,
           },
         },
       },

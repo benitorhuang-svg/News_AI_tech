@@ -3,8 +3,8 @@
     "repo": "n8n-io/n8n",
     "label": "n8n",
     "category": "application",
-    "stars": 205542,
-    "starsWeekly": 0,
+    "stars": 206008,
+    "starsWeekly": 466,
     "language": "TypeScript",
     "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
     "topics": [
@@ -29,14 +29,14 @@
       "workflow",
       "workflow-automation"
     ],
-    "pushedAt": "2026-09-21T13:57:41Z",
-    "collectedAt": "2026-09-21T13:58:54.369Z"
+    "pushedAt": "2026-09-26T08:11:32Z",
+    "collectedAt": "2026-09-26T09:12:16.887Z"
   },
   {
     "repo": "firecrawl/firecrawl",
     "label": "Firecrawl",
     "category": "dev-tool",
-    "stars": 182802,
+    "stars": 184878,
     "starsWeekly": 0,
     "language": "TypeScript",
     "description": "The web data API to search, scrape, and interact at scale. 🔥",
@@ -61,15 +61,15 @@
       "web-search",
       "webscraping"
     ],
-    "pushedAt": "2026-09-21T13:19:07Z",
-    "collectedAt": "2026-09-21T13:58:54.369Z"
+    "pushedAt": "2026-09-26T06:24:20Z",
+    "collectedAt": "2026-09-26T09:12:16.887Z"
   },
   {
     "repo": "ollama/ollama",
     "label": "Ollama",
     "category": "inference-engine",
-    "stars": 181363,
-    "starsWeekly": 0,
+    "stars": 181748,
+    "starsWeekly": 385,
     "language": "Go",
     "description": "Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
     "topics": [
@@ -89,15 +89,15 @@
       "ollama",
       "qwen"
     ],
-    "pushedAt": "2026-09-19T20:41:40Z",
-    "collectedAt": "2026-09-21T13:58:54.369Z"
+    "pushedAt": "2026-09-25T22:07:17Z",
+    "collectedAt": "2026-09-26T09:12:16.887Z"
   },
   {
     "repo": "langgenius/dify",
     "label": "Dify",
     "category": "application",
-    "stars": 156724,
-    "starsWeekly": 0,
+    "stars": 157242,
+    "starsWeekly": 518,
     "language": "TypeScript",
     "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
     "topics": [
@@ -121,15 +121,15 @@
       "skills",
       "workflow"
     ],
-    "pushedAt": "2026-09-21T13:39:41Z",
-    "collectedAt": "2026-09-21T13:58:54.369Z"
+    "pushedAt": "2026-09-26T08:51:55Z",
+    "collectedAt": "2026-09-26T09:12:16.887Z"
   },
   {
     "repo": "open-webui/open-webui",
     "label": "Open WebUI",
     "category": "application",
-    "stars": 152700,
-    "starsWeekly": 0,
+    "stars": 153211,
+    "starsWeekly": 511,
     "language": "Python",
     "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
     "topics": [
@@ -149,41 +149,41 @@
       "ui",
       "webui"
     ],
-    "pushedAt": "2026-09-21T12:59:40Z",
-    "collectedAt": "2026-09-21T13:58:54.369Z"
+    "pushedAt": "2026-09-26T03:28:13Z",
+    "collectedAt": "2026-09-26T09:12:16.887Z"
   },
   {
     "repo": "ggml-org/llama.cpp",
     "label": "llama.cpp",
     "category": "inference-engine",
-    "stars": 129049,
-    "starsWeekly": 0,
+    "stars": 129549,
+    "starsWeekly": 500,
     "language": "C++",
     "description": "LLM inference in C/C++",
     "topics": [
       "ggml"
     ],
-    "pushedAt": "2026-09-21T12:55:53Z",
-    "collectedAt": "2026-09-21T13:58:54.369Z"
+    "pushedAt": "2026-09-26T08:59:52Z",
+    "collectedAt": "2026-09-26T09:12:16.887Z"
   },
   {
     "repo": "deepseek-ai/DeepSeek-V3",
     "label": "DeepSeek V3",
     "category": "foundation-model",
-    "stars": 104473,
-    "starsWeekly": 0,
+    "stars": 104492,
+    "starsWeekly": 19,
     "language": "Python",
     "description": "",
     "topics": [],
     "pushedAt": "2025-08-28T03:24:37Z",
-    "collectedAt": "2026-09-21T13:58:54.369Z"
+    "collectedAt": "2026-09-26T09:12:16.887Z"
   },
   {
     "repo": "vllm-project/vllm",
     "label": "vLLM",
     "category": "inference-engine",
-    "stars": 92331,
-    "starsWeekly": 0,
+    "stars": 92702,
+    "starsWeekly": 371,
     "language": "Python",
     "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
     "topics": [
@@ -208,14 +208,14 @@
       "tpu",
       "transformer"
     ],
-    "pushedAt": "2026-09-21T13:27:41Z",
-    "collectedAt": "2026-09-21T13:58:54.369Z"
+    "pushedAt": "2026-09-26T09:04:40Z",
+    "collectedAt": "2026-09-26T09:12:16.887Z"
   },
   {
     "repo": "lobehub/lobehub",
     "label": "LobeChat",
     "category": "application",
-    "stars": 82722,
+    "stars": 82835,
     "starsWeekly": 0,
     "language": "TypeScript",
     "description": "🤯 LobeHub is your Chief Agent Operator, organizing your agents into 7×24 operations by hiring, scheduling, and reporting on your entire AI team.",
@@ -239,15 +239,15 @@
       "openai",
       "skills"
     ],
-    "pushedAt": "2026-09-21T13:57:28Z",
-    "collectedAt": "2026-09-21T13:58:54.369Z"
+    "pushedAt": "2026-09-26T08:48:23Z",
+    "collectedAt": "2026-09-26T09:12:16.887Z"
   },
   {
     "repo": "microsoft/autogen",
     "label": "AutoGen",
     "category": "agent-framework",
-    "stars": 61094,
-    "starsWeekly": 0,
+    "stars": 61171,
+    "starsWeekly": 77,
     "language": "Python",
     "description": "A programming framework for agentic AI",
     "topics": [
@@ -263,14 +263,14 @@
       "llm-framework"
     ],
     "pushedAt": "2026-04-15T11:59:09Z",
-    "collectedAt": "2026-09-21T13:58:54.369Z"
+    "collectedAt": "2026-09-26T09:12:16.887Z"
   },
   {
     "repo": "BerriAI/litellm",
     "label": "LiteLLM",
     "category": "dev-tool",
-    "stars": 59313,
-    "starsWeekly": 0,
+    "stars": 59647,
+    "starsWeekly": 334,
     "language": "Python",
     "description": "The fastest, litest AI Gateway. Rust core with Python SDK. Call 100+ LLM APIs in OpenAI (or native) format with cost tracking, guardrails, load balancing, and logging [Bedrock, Azure, OpenAI, Anthropic, OpenAI, VertexAI, vLLM, Nvidia NIM]",
     "topics": [
@@ -291,15 +291,15 @@
       "rust-ai",
       "vertex-ai"
     ],
-    "pushedAt": "2026-09-21T13:45:46Z",
-    "collectedAt": "2026-09-21T13:58:54.369Z"
+    "pushedAt": "2026-09-26T09:08:57Z",
+    "collectedAt": "2026-09-26T09:12:16.887Z"
   },
   {
     "repo": "crewAIInc/crewAI",
     "label": "CrewAI",
     "category": "agent-framework",
-    "stars": 58856,
-    "starsWeekly": 0,
+    "stars": 59043,
+    "starsWeekly": 187,
     "language": "Python",
     "description": "Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks.",
     "topics": [
@@ -309,15 +309,15 @@
       "aiagentframework",
       "llms"
     ],
-    "pushedAt": "2026-09-21T10:58:23Z",
-    "collectedAt": "2026-09-21T13:58:54.369Z"
+    "pushedAt": "2026-09-26T06:24:42Z",
+    "collectedAt": "2026-09-26T09:12:16.887Z"
   },
   {
     "repo": "langchain-ai/langgraph",
     "label": "LangGraph",
     "category": "agent-framework",
-    "stars": 42074,
-    "starsWeekly": 0,
+    "stars": 42306,
+    "starsWeekly": 232,
     "language": "Python",
     "description": "Build resilient agents.",
     "topics": [
@@ -340,15 +340,15 @@
       "python",
       "rag"
     ],
-    "pushedAt": "2026-09-20T19:50:34Z",
-    "collectedAt": "2026-09-21T13:58:54.369Z"
+    "pushedAt": "2026-09-26T04:38:30Z",
+    "collectedAt": "2026-09-26T09:12:16.887Z"
   },
   {
     "repo": "sgl-project/sglang",
     "label": "SGLang",
     "category": "inference-engine",
-    "stars": 36256,
-    "starsWeekly": 0,
+    "stars": 36443,
+    "starsWeekly": 187,
     "language": "Python",
     "description": "SGLang is a high-performance serving framework for large language models and multimodal models.",
     "topics": [
@@ -371,15 +371,15 @@
       "vlm",
       "wan"
     ],
-    "pushedAt": "2026-09-21T13:47:45Z",
-    "collectedAt": "2026-09-21T13:58:54.369Z"
+    "pushedAt": "2026-09-26T09:08:17Z",
+    "collectedAt": "2026-09-26T09:12:16.887Z"
   },
   {
     "repo": "langfuse/langfuse",
     "label": "Langfuse",
     "category": "dev-tool",
-    "stars": 34892,
-    "starsWeekly": 0,
+    "stars": 35059,
+    "starsWeekly": 167,
     "language": "TypeScript",
     "description": "🪢 Open source agent evals & observability: Trace, evaluate, and improve LLM applications with one open platform.",
     "topics": [
@@ -403,15 +403,15 @@
       "self-hosted",
       "ycombinator"
     ],
-    "pushedAt": "2026-09-21T13:58:10Z",
-    "collectedAt": "2026-09-21T13:58:54.369Z"
+    "pushedAt": "2026-09-26T02:39:16Z",
+    "collectedAt": "2026-09-26T09:12:16.887Z"
   },
   {
     "repo": "mastra-ai/mastra",
     "label": "Mastra",
     "category": "agent-framework",
-    "stars": 28238,
-    "starsWeekly": 0,
+    "stars": 28340,
+    "starsWeekly": 102,
     "language": "TypeScript",
     "description": "Mastra is the modern TypeScript framework for AI-powered applications and agents.",
     "topics": [
@@ -429,27 +429,27 @@
       "typescript",
       "workflows"
     ],
-    "pushedAt": "2026-09-21T13:58:16Z",
-    "collectedAt": "2026-09-21T13:58:54.369Z"
+    "pushedAt": "2026-09-26T08:17:41Z",
+    "collectedAt": "2026-09-26T09:12:16.887Z"
   },
   {
     "repo": "QwenLM/Qwen3",
     "label": "Qwen 3",
     "category": "foundation-model",
-    "stars": 27649,
-    "starsWeekly": 0,
+    "stars": 27655,
+    "starsWeekly": 6,
     "language": "Python",
     "description": "Qwen3 is the large language model series developed by Qwen team, Alibaba Cloud.",
     "topics": [],
     "pushedAt": "2026-01-09T03:05:47Z",
-    "collectedAt": "2026-09-21T13:58:54.369Z"
+    "collectedAt": "2026-09-26T09:12:16.887Z"
   },
   {
     "repo": "pydantic/pydantic-ai",
     "label": "Pydantic AI",
     "category": "dev-tool",
-    "stars": 20090,
-    "starsWeekly": 0,
+    "stars": 20187,
+    "starsWeekly": 97,
     "language": "Python",
     "description": "How Python does AI. Agents, realtime voice, image generation, embeddings. Every model, every interface, typed end to end.",
     "topics": [
@@ -461,15 +461,15 @@
       "pydantic",
       "python"
     ],
-    "pushedAt": "2026-09-21T12:45:18Z",
-    "collectedAt": "2026-09-21T13:58:54.369Z"
+    "pushedAt": "2026-09-26T08:52:49Z",
+    "collectedAt": "2026-09-26T09:12:16.887Z"
   },
   {
     "repo": "mistralai/mistral-inference",
     "label": "Mistral",
     "category": "foundation-model",
-    "stars": 10824,
-    "starsWeekly": 0,
+    "stars": 10820,
+    "starsWeekly": -4,
     "language": "Jupyter Notebook",
     "description": "Official inference library for Mistral models",
     "topics": [
@@ -478,18 +478,18 @@
       "mistralai"
     ],
     "pushedAt": "2026-06-16T15:40:44Z",
-    "collectedAt": "2026-09-21T13:58:54.369Z"
+    "collectedAt": "2026-09-26T09:12:16.887Z"
   },
   {
     "repo": "meta-llama/llama-models",
     "label": "Llama (Meta)",
     "category": "foundation-model",
-    "stars": 7693,
-    "starsWeekly": 0,
+    "stars": 7696,
+    "starsWeekly": 3,
     "language": "Python",
     "description": "Utilities intended for use with Llama models.",
     "topics": [],
     "pushedAt": "2026-02-11T16:38:31Z",
-    "collectedAt": "2026-09-21T13:58:54.369Z"
+    "collectedAt": "2026-09-26T09:12:16.887Z"
   }
 ]

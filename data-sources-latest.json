@@ -1,6 +1,84 @@
 [
   {
     "vendor": "Gemini",
+    "title": "The latest AI news we announced in September 2026",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
+    "date": "Fri, 02 Oct 2026 15:00:00 +0000"
+  },
+  {
+    "vendor": "Gemini",
+    "title": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/winner-future-vision-xprize/",
+    "date": "Mon, 28 Sep 2026 19:00:00 +0000"
+  },
+  {
+    "vendor": "Gemini",
+    "title": "Google Beam expands with new regions, partners, and customers",
+    "url": "https://blog.google/innovation-and-ai/technology/research/google-beam-expansion/",
+    "date": "Wed, 23 Sep 2026 18:00:00 +0000"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "A model guide for the GPT-6 family",
+    "url": "https://openai.com/index/practical-guide-building-gpt-6",
+    "date": "Fri, 02 Oct 2026 16:15:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "Chatham scales its capital markets expertise with OpenAI",
+    "url": "https://openai.com/index/chatham-financial",
+    "date": "Fri, 02 Oct 2026 00:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "The eternal complement",
+    "url": "https://openai.com/index/the-eternal-complement",
+    "date": "Thu, 01 Oct 2026 17:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "How Albertsons Companies is reimagining retail from the inside out",
+    "url": "https://openai.com/index/albertsons-reimagining-retail",
+    "date": "Thu, 01 Oct 2026 16:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "The Den frees up 10-15 hours a week to grow with ChatGPT Work",
+    "url": "https://openai.com/index/the-den-family-social",
+    "date": "Thu, 01 Oct 2026 00:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "Disrupting a coordinated model-distillation campaign",
+    "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
+    "date": "Wed, 30 Sep 2026 10:30:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "Helping small businesses put AI to work",
+    "url": "https://openai.com/index/helping-small-businesses-put-ai-to-work",
+    "date": "Wed, 30 Sep 2026 10:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "DevDay 2026 Recap",
+    "url": "https://openai.com/index/devday-2026-recap",
+    "date": "Tue, 29 Sep 2026 10:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "Introducing GPT-6.1 Sol",
+    "url": "https://openai.com/index/introducing-gpt-6-1-sol",
+    "date": "Tue, 29 Sep 2026 10:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "Introducing dots",
+    "url": "https://openai.com/index/introducing-dots",
+    "date": "Tue, 29 Sep 2026 00:00:00 GMT"
+  },
+  {
+    "vendor": "Gemini",
     "title": "New experts join Google’s AI &amp; Economy team",
     "url": "https://blog.google/innovation-and-ai/technology/ai/expanding-ai-economy-research-bench/",
     "date": "Fri, 18 Sep 2026 14:00:00 +0000"

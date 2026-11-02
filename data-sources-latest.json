@@ -1,6 +1,108 @@
 [
   {
     "vendor": "Gemini",
+    "title": "Our newest AI Quest: Mapping the human brain",
+    "url": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/",
+    "date": "Mon, 26 Oct 2026 16:00:00 +0000"
+  },
+  {
+    "vendor": "Gemini",
+    "title": "Southeast Asia’s digital economy to hit $368 billion",
+    "url": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026/",
+    "date": "Wed, 21 Oct 2026 04:00:00 +0000"
+  },
+  {
+    "vendor": "Gemini",
+    "title": "Gemini 4 Argon: Built to solve your hardest problems",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+    "date": "Tue, 13 Oct 2026 16:00:00 +0000"
+  },
+  {
+    "vendor": "Gemini",
+    "title": "Introducing Playground: Create and play custom games",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
+    "date": "Wed, 07 Oct 2026 12:00:00 +0000"
+  },
+  {
+    "vendor": "Gemini",
+    "title": "The latest AI news we announced in September 2026",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
+    "date": "Fri, 02 Oct 2026 15:00:00 +0000"
+  },
+  {
+    "vendor": "Gemini",
+    "title": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/winner-future-vision-xprize/",
+    "date": "Mon, 28 Sep 2026 19:00:00 +0000"
+  },
+  {
+    "vendor": "Gemini",
+    "title": "Google Beam expands with new regions, partners, and customers",
+    "url": "https://blog.google/innovation-and-ai/technology/research/google-beam-expansion/",
+    "date": "Wed, 23 Sep 2026 18:00:00 +0000"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "Making it easier for websites to express AI training preferences",
+    "url": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+    "date": "Fri, 30 Oct 2026 09:30:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "Community safety report and new protections for teens",
+    "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+    "date": "Fri, 30 Oct 2026 09:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "Fair use benefits everyone",
+    "url": "https://openai.com/index/fair-use-benefits-everyone",
+    "date": "Fri, 30 Oct 2026 00:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "An updated Model Spec for more capable and beneficial AI",
+    "url": "https://openai.com/index/updated-model-spec",
+    "date": "Thu, 29 Oct 2026 17:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "How we detect frontier model misalignment",
+    "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+    "date": "Thu, 29 Oct 2026 09:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "How Ropes & Gray is developing AI for transactional diligence",
+    "url": "https://openai.com/index/ropes-gray-ai-diligence",
+    "date": "Thu, 29 Oct 2026 07:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "Credit Saison achieves 954% ROI in a ChatGPT Enterprise pilot",
+    "url": "https://openai.com/index/credit-saison",
+    "date": "Thu, 29 Oct 2026 00:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
+    "url": "https://openai.com/index/openai-servicenow-partnership-expansion",
+    "date": "Wed, 28 Oct 2026 13:15:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "The future of the firm",
+    "url": "https://openai.com/index/the-future-of-the-firm",
+    "date": "Wed, 28 Oct 2026 10:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "Legora is building the agentic operating system for legal work",
+    "url": "https://openai.com/index/legora",
+    "date": "Wed, 28 Oct 2026 09:30:00 GMT"
+  },
+  {
+    "vendor": "Gemini",
     "title": "New experts join Google’s AI &amp; Economy team",
     "url": "https://blog.google/innovation-and-ai/technology/ai/expanding-ai-economy-research-bench/",
     "date": "Fri, 18 Sep 2026 14:00:00 +0000"

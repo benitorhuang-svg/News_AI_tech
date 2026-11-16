@@ -1,6 +1,126 @@
 [
   {
     "vendor": "Gemini",
+    "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+    "url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
+    "date": "Thu, 12 Nov 2026 18:00:00 +0000"
+  },
+  {
+    "vendor": "Gemini",
+    "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+    "date": "Wed, 11 Nov 2026 18:00:00 +0000"
+  },
+  {
+    "vendor": "Gemini",
+    "title": "Try Tabletop: Customizable, collaborative spaces for groups to plan, play and do more together.",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/",
+    "date": "Wed, 11 Nov 2026 16:00:00 +0000"
+  },
+  {
+    "vendor": "Gemini",
+    "title": "Experience the art and legacy of Dr. Esther Mahlangu",
+    "url": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/esther-mahlangu/",
+    "date": "Wed, 11 Nov 2026 09:00:00 +0000"
+  },
+  {
+    "vendor": "Gemini",
+    "title": "Gemini Intelligence: New features, on more devices",
+    "url": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/",
+    "date": "Tue, 10 Nov 2026 19:00:00 +0000"
+  },
+  {
+    "vendor": "Gemini",
+    "title": "We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.",
+    "url": "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration/",
+    "date": "Tue, 10 Nov 2026 14:00:00 +0000"
+  },
+  {
+    "vendor": "Gemini",
+    "title": "Google Cloud launches Gemini for healthcare.",
+    "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare/",
+    "date": "Tue, 10 Nov 2026 13:00:00 +0000"
+  },
+  {
+    "vendor": "Gemini",
+    "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+    "date": "Thu, 05 Nov 2026 17:00:00 +0000"
+  },
+  {
+    "vendor": "Gemini",
+    "title": "The latest AI news we announced in October 2026",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
+    "date": "Mon, 02 Nov 2026 17:45:00 +0000"
+  },
+  {
+    "vendor": "Gemini",
+    "title": "Our newest AI Quest: Mapping the human brain",
+    "url": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/",
+    "date": "Mon, 26 Oct 2026 16:00:00 +0000"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "A step toward defining the Standard Model on a lattice",
+    "url": "https://openai.com/index/step-toward-defining-the-standard-model",
+    "date": "Sun, 15 Nov 2026 22:00:01 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "Our new blog for science",
+    "url": "https://openai.com/index/our-new-blog-for-science",
+    "date": "Sun, 15 Nov 2026 22:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "Introducing ChatGPT Wallet",
+    "url": "https://openai.com/index/introducing-chatgpt-wallet",
+    "date": "Fri, 13 Nov 2026 15:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "Shield helps technicians hand off legacy portal work with OpenAI",
+    "url": "https://openai.com/business/customer-stories/shield",
+    "date": "Fri, 13 Nov 2026 08:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+    "url": "https://openai.com/business/customer-stories/amplitude",
+    "date": "Thu, 12 Nov 2026 20:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "Gondola doubles revenue as its team builds more with Codex",
+    "url": "https://openai.com/business/customer-stories/gondola",
+    "date": "Thu, 12 Nov 2026 12:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "Holiday Extras is rethinking what it can build with Codex",
+    "url": "https://openai.com/business/customer-stories/holidays-extras-codex",
+    "date": "Thu, 12 Nov 2026 09:30:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "Supporting research on AI and children’s safety",
+    "url": "https://openai.com/index/children-first-declaration",
+    "date": "Thu, 12 Nov 2026 00:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "Gilbert + Tobin rethinks the business of law with AI",
+    "url": "https://openai.com/index/gilbert-tobin-sam-nickless",
+    "date": "Thu, 12 Nov 2026 00:00:00 GMT"
+  },
+  {
+    "vendor": "ChatGPT",
+    "title": "ChatGPT Plus for veterans and servicemembers",
+    "url": "https://openai.com/index/chatgpt-plus-for-veterans",
+    "date": "Wed, 11 Nov 2026 08:00:00 GMT"
+  },
+  {
+    "vendor": "Gemini",
     "title": "New experts join Google’s AI &amp; Economy team",
     "url": "https://blog.google/innovation-and-ai/technology/ai/expanding-ai-economy-research-bench/",
     "date": "Fri, 18 Sep 2026 14:00:00 +0000"
